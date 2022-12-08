@@ -5,14 +5,77 @@
       i18n:domain="imap.customizations"
       metal:use-macro="context/main_template/macros/master">
 <body>
-  <metal:content-core fill-slot="content-core">
-  <metal:block define-macro="content-core">
 
-      <h2 i18n:translate="">Sample View</h2>
-      <!--<div tal:replace="view/my_custom_view_method" />-->
-      <!--<div tal:replace="context/my_custom_field" />-->
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
 
-  </metal:block>
-  </metal:content-core>
+    <div>
+        <h1>Boo!</h1>
+        <p>some content here about 2020 report</p>
+        Probably some banner image
+        <button type="button" class="btn btn-primary">Read the report</button>
+    </div>
+
+
+    <div class="container">
+        <div class="row row-cols-3">
+            <div class="col">
+
+                <div class="card">
+                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">News</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">News</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="col">
+
+                <div class="card">
+                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Activity</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                    <p>2022-22-22</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="col">
+
+                <div class="card">
+                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Resource</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Published: </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+     <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
 </body>
 </html>
