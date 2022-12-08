@@ -1,0 +1,5 @@
+===================
+imap.customizations
+===================
+
+User documentation
