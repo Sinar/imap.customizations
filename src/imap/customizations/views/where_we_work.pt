@@ -24,10 +24,183 @@
 
   <metal:content-core fill-slot="content-core">
   <metal:block define-macro="content-core">
+	<div
+  class="bg-image p-5 text-left mb-5 text-white"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');"
+>
+  <h1>Malaysia</h1>
+  <p>
+    Some random text about each country that can go one line or two lines — at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+  </p>
 
-    <h2>Main content</h2>
-    <!--<div tal:replace="view/my_custom_view_method" />-->
-    <!--<div tal:replace="context/my_custom_field" />-->
+</div>
+<div class="container-fluid ps-5">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Where We Work</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Malaysia</li>
+  </ol>
+</nav>
+</div>
+
+<div class="container-fluid ps-5">
+
+<h2> Research Reports & Working Paper Resources in Malaysia </h2>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-3">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      
+	      <i class="flag flag-us"></i>
+	      <i class="flag flag-poland"></i>
+	      <i class="flag flag-china"></i>
+	      <h5 class="card-title">iMAP State of Censorship Report 2022 — Full Report</h5>
+        <i class="flag flag-us"></i>
+<i class="flag flag-poland"></i>
+<i class="flag flag-china"></i>
+	      <p class="card-text">State authorities in India order domestic internet service providers (ISPs) to block access to websites and services. We developed a mobile application, CensorWatch, that runs network tests to study inco...</p>
+        <span a href="#" class="badge bg-light text-dark">Research Reports</span>
+		<span a href="#" class="badge bg-info text-dark">Working Paper</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-3">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      
+	      <i class="flag flag-us"></i>
+	      <i class="flag flag-poland"></i>
+	      <i class="flag flag-china"></i>
+	      <h5 class="card-title">iMAP State of Censorship Report 2022 — Full Report</h5>
+        <i class="flag flag-us"></i>
+<i class="flag flag-poland"></i>
+<i class="flag flag-china"></i>
+	      <p class="card-text">State authorities in India order domestic internet service providers (ISPs) to block access to websites and services. We developed a mobile application, CensorWatch, that runs network tests to study inco...</p>
+        <span class="badge bg-light text-dark"><a href="#">Research Reports</a></span>
+        <span class="badge bg-light text-dark"><a href="#">Working Paper</a></span>
+     </div>
+    </div>
+  </div>
+</div>
+
+<p class="text-center"><a href="#">View all resources here</a></p>
+
+</div>
+
+<div class="container-fluid p-5">
+<h2>Partner Organizations</h2>
+<div class="row row-cols-4">
+
+    <div class="card">
+      <img src="https://imap.sinarproject.org/partners/advocacy-and-policy-institute/@@images/700be720-7a02-42e2-9c18-ad5853efff15.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Advocacy and Policy Institute</h5>
+      </div>
+    </div>
+
+  
+  <div class="card">
+      <img src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Centre of Internet Society</h5>
+      </div>
+    </div>
+  
+  
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+
+<div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+
+
+<div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<div class="container-fluid p-5 text-left">
+	<h2>News and Events</h2>
+	<div class="row row-cols-2">
+	<div class="col">
+	<h3><small class="text-muted">Latest news</small></h3>
+<div class="card">
+		<div class="card-body">
+				
+      <span class="card-text"><small class="text-muted">CHARLES WAYNE</small></span>
+      <span class="card-text"><small class="text-muted">•</small></span> 
+      <span class="card-text"><small class="text-muted">FRI, 13 OCT 2023</small></span>
+	
+<h5 class="card-title">At sapiente dolore ex consequuntur optio. Ut eligendi quis in velit expedita ut quisquam praesentium eo</h5>    
+</div>
+	</div>
+
+<div class="card">
+		<div class="card-body">
+				
+      <span class="card-text"><small class="text-muted">CHARLES WAYNE</small></span>
+      <span class="card-text"><small class="text-muted">•</small></span> 
+      <span class="card-text"><small class="text-muted">FRI, 13 OCT 2023</small></span>
+	
+
+<h5 class="card-title">At sapiente dolore ex consequuntur optio. Ut eligendi quis in velit expedita ut quisquam praesentium eo</h5>    
+</div>
+</div>
+</div>
+
+		<div class="col">
+		<h3><small class="text-muted">Upcoming events</small></h3>
+                
+
+	<div class="card mb-3">
+                <div class="card-body">
+      
+   
+<h5 class="card-title">iMAP 2023 Internet Censorship Report Launch</h5>    
+  
+      <span class="card-text"><small class="text-secondary">FRI, 13 OCT 2023</small></span>
+      <span class="card-text"><small class="text-secondary">•</small></span>                  
+      <span class="card-text"><small class="text-secondary">4.00PM - 6.00PM</small></span>
+	  <p class="card-text"><small class="text-secondary">Streamyard</small></p>
+
+
+	</div>
+	</div>
+	</div>
+</div>
+</div>
+
+
 
   </metal:block>
   </metal:content-core>
