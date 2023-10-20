@@ -7,6 +7,15 @@
  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="imap-resource"
+    for="*"
+    class=".i_m_a_p_resource.IMAPResource"
+    template="imap_resource.pt"
+    permission="zope2.View"
+    layer="imap.customizations.interfaces.IImapCustomizationsLayer"
+    />
+
+  <browser:page
     name="where-we-work-main"
     for="*"
     class=".where_we_work_main.WhereWeWorkMain"
