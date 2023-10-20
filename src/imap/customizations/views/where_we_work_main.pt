@@ -25,9 +25,15 @@
   <metal:content-core fill-slot="content-core">
   <metal:block define-macro="content-core">
 
-    <h2>Main content</h2>
-    <!--<div tal:replace="view/my_custom_view_method" />-->
-    <!--<div tal:replace="context/my_custom_field" />-->
+<div
+  class="bg-image p-5 text-left my-6 text-white"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');"
+>
+  <h1>Where We Work</h1>
+  <p>
+    The Internet Monitoring Action Project (iMAP) aims to establish regional and in-country networks that monitor network interference and restrictions to the freedom of expression online in 10 countries: Cambodia, Hong Kong (China), India, Indonesia, Malaysia, Myanmar, Philippines, Thailand, Timor-Leste and Vietnam.
+  </p>
+
 
   </metal:block>
   </metal:content-core>
