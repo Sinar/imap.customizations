@@ -9,26 +9,26 @@
   <browser:page
     name="imap-resource"
     for="*"
-    class=".i_m_a_p_resource.IMAPResource"
+    class=".imap_resource.ImapResource"
     template="imap_resource.pt"
     permission="zope2.View"
     layer="imap.customizations.interfaces.IImapCustomizationsLayer"
     />
 
   <browser:page
-    name="where-we-work-main"
+    name="where-we-work-page"
     for="*"
-    class=".where_we_work_main.WhereWeWorkMain"
-    template="where_we_work_main.pt"
+    class=".where_we_work_page.WhereWeWorkPage"
+    template="where_we_work_page.pt"
     permission="zope2.View"
     layer="imap.customizations.interfaces.IImapCustomizationsLayer"
     />
 
   <browser:page
-    name="where-we-work"
+    name="imap-country"
     for="*"
-    class=".where_we_work.WhereWeWork"
-    template="where_we_work.pt"
+    class=".imap_country.ImapCountry"
+    template="imap_country.pt"
     permission="zope2.View"
     layer="imap.customizations.interfaces.IImapCustomizationsLayer"
     />

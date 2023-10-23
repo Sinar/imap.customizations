@@ -4,8 +4,8 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       i18n:domain="imap.customizations"
       metal:use-macro="context/main_template/macros/master">
-<body>
 
+<body>
   <metal:custom_title fill-slot="content-title">
     <h1 tal:replace="structure context/@@title" />
 
@@ -25,9 +25,218 @@
   <metal:content-core fill-slot="content-core">
   <metal:block define-macro="content-core">
 
-    <h2>Main content</h2>
-    <!--<div tal:replace="view/my_custom_view_method" />-->
-    <!--<div tal:replace="context/my_custom_field" />-->
+<div class="container-fluid ps-5">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Resources</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Addressing internet censorship and content filtering — An advocacy toolkit for civil society oganizations</li>
+  </ol>
+</nav>
+</div>
+
+<div class="container-fluid g-0">
+
+<img src="https://www.graduatefashionweek.com/static/ff38d01dac2d8347ef5eb50618492f65/1cb3f/Header-Image-template-1440px-x-550px-5.webp" class="img-fluid text-center" alt="...">
+</div>
+
+<div class="container-fluid ps-5 mt-5">
+  <div class="row row-cols-2">
+  <div class="col-md-8">
+      <h1>Addressing internet censorship and content filtering — An advocacy toolkit for civil society oganizations</h1>
+      <h4><small class="text-muted mt-3">This toolkit for civil society organization and advocacy movements empowers exisiting movements to navigate internet censorship and content filtering.</small></h4>
+
+
+<div class"row">
+<div class="card mb-3 mt-4">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+      
+        <p class="card-title text-muted">Sustainable development goals — 17.17</p>
+        <p class="card-text">Encourage and promote effective public, public- private, and civil society partnerships, building on the experience and resourcing strategies of partnerships.</p>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="card mb-3 mt-3">
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+      
+        <p class="card-title text-muted">Copyrights</p>
+        <p class="card-text">Some random long sentence about the copyright claim or somethined ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+     </div>
+    </div>
+      </div>
+      </div>
+
+<div class="card mb-3 mt-4">
+  <div class="row g-0">
+      <div class="card-body">
+      
+        <h4 class="card-title">Key Findings</h4>
+        <p class="card-text">• Based on the OONI measurements collected, Timor-Leste seems to be free of government-sanctioned censorship on websites.</p>
+        <p class="card-text">• Even if the government proposes new laws and bills, such as the Criminal Defamation law and the Cybercrime Bill, the state remains committed to democratic rule of law and respect for press and internet freedom.</p>
+        <p class="card-text">• While advancing the Criminal Defamation and Cybercrim Law, Timor-Leste remains free of government blocking and censorship of digital space.</p>
+
+  </div>
+</div>
+    </div>
+
+<div class="container-fluid ps-0 mt-5">
+<h2>Heading 2 title added here</h2>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi:
+
+Laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+Minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+Prerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+</div>
+
+<div class="container-fluid p-0 mt-5">
+<h2>Partners</h2>
+<div class="row row-cols-4">
+
+    <div class="card">
+      <img src="https://imap.sinarproject.org/partners/advocacy-and-policy-institute/@@images/700be720-7a02-42e2-9c18-ad5853efff15.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Advocacy and Policy Institute</h5>
+      </div>
+    </div>
+
+  
+  <div class="card">
+      <img src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Centre of Internet Society</h5>
+      </div>
+    </div>
+  
+  
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+
+  
+
+</div>
+</div>
+
+
+  </div>
+
+
+    <div class="col-md-3 g-0">
+      <div class="row g-0">
+        <div class="col">
+          <div class="card">
+    <div class="card-body">
+        
+<p class="card-title text-muted">Published date</p>    
+      <p class="card-text">FRI, 13 OCT 2023</p>
+
+</div>
+  </div>
+        </div>
+        <div class="col">
+          <div class="card">
+    <div class="card-body">
+        
+<p class="card-title text-muted">Modified date</p>    
+      <p class="card-text">SUN, 11 DEC 2023</p>
+
+</div>
+  </div>
+        </div>
+      
+      <div class="row mt-3 g-0">
+  <div class="card m-0">
+   <div class="row g-0">
+    <div class="col-md-2">
+      <!-- Replace this image with icon -->
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+    <div class="card-body">     
+  <p class="card-title text-muted">Countries</p>    
+      <p class="card-text">Cambodia, Myanmar, Malaysia</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+ <div class="row mt-3 g-0">
+  <div class="card m-0">
+   <div class="row g-0">
+    <div class="col-md-2">
+      <!-- Replace this image with icon -->
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+    <div class="card-body">     
+  <p class="card-title text-muted">Author(s)</p>    
+      <p class="card-text">Siti Khadijah, Farah Wadiha, Samuel Oommen</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+
+<div class="row mt-3 g-0">
+  <div class="card m-0">
+   <div class="row g-0">
+    <div class="col-md-2">
+      <!-- Replace this image with icon -->
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+    <div class="card-body">     
+  <p class="card-title text-muted">Tags</p>    
+      <p class="card-text">dns, military, tagname, another, moretag, etc, listing</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+<div class="row mt-3 g-0">
+  <div class="card m-0">
+   <div class="row g-0">
+    <div class="col-md-2">
+      <!-- Replace this image with icon -->
+      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-10">
+    <div class="card-body">     
+  <p class="card-title text-muted">Attachment(s)</p>    
+      <p class="card-text">iMAP Internet Censorship Timor-Leste Report</p>
+      <span class="card-text"><small class="text-muted">PDF file</small></span>
+      <span class="card-text"><small class="text-muted">•</small></span> 
+        <span class="card-text"><small class="text-muted">246kB</small></span>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+</div>
+
+
 
   </metal:block>
   </metal:content-core>

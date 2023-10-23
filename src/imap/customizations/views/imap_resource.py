@@ -7,12 +7,12 @@ from zope.interface import Interface
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-class IIMAPResource(Interface):
+class IImapResource(Interface):
     """ Marker Interface for IIMAPResource"""
 
 
-@implementer(IIMAPResource)
-class IMAPResource(BrowserView):
+@implementer(IImapResource)
+class ImapResource(BrowserView):
     # If you want to define a template here, please remove the template from
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('imap_resource.pt')

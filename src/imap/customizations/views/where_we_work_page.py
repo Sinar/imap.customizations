@@ -7,12 +7,12 @@ from zope.interface import Interface
 
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
-class IWhereWeWorkMain(Interface):
+class IWhereWeWorkPage(Interface):
     """ Marker Interface for IWhereWeWorkMain"""
 
 
-@implementer(IWhereWeWorkMain)
-class WhereWeWorkMain(BrowserView):
+@implementer(IWhereWeWorkPage)
+class WhereWeWorkPage(BrowserView):
     # If you want to define a template here, please remove the template from
     # the configure.zcml registration of this view.
     # template = ViewPageTemplateFile('where_we_work_main.pt')
