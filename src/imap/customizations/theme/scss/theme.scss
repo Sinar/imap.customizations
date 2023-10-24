@@ -1,29 +1,261 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=IBM+Plex+Mono&family=Schibsted+Grotesk&display=swap');
 // Bootstrap Variable Overrides
 
 $enable-rounded: false;
-$primary: #61a4b7;
+$primary: #35599F;
 $secondary: #74d985;
 $margin: 16px;
+$background-color: #fff;
 
 // Option A: Include all of Bootstrap
 
 @import "bootstrap/scss/bootstrap";
 
-// Prefix for :root CSS variables
+// Main template
 
-$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
-$prefix:                      $variable-prefix !default;
 
-$font-family: 'Schibsted Grotesk';
+
+h1 {
+	color: var(--greys-fiord, #2A2B2E);
+	leading-trim: both;
+	text-edge: cap;
+	/* Titles/Title 1/Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 145%;
+}
+
+h2 {
+	color: var(--greys-fiord, #2A2B2E);
+	leading-trim: both;
+	text-edge: cap;
+	/* Titles/Title 1/Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+h3 {
+	color: var(--whites-powder, #2A2B2E);
+	leading-trim: both;
+	text-edge: cap;
+	/* Headings/Heading 2/Semi Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+h4 {
+	color: var(--whites-powder, #57606A);
+	leading-trim: both;
+	text-edge: cap;
+	/* Headings/Heading 3/Semi Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+h5 {
+color: var(--whites-powder, #57606A);
+leading-trim: both;
+text-edge: cap;
+/* Headings/Heading 4/Semi Bold */
+font-family: Schibsted Grotesk;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+h6 {
+	color: var(--whites-powder, #57606A);
+	leading-trim: both;
+	text-edge: cap;
+	/* Headings/Heading 4/Semi Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	}
+
+p {
+	color: #57606A;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /* 28.8px */
+}
+
+a {
+	color: #166FFF;
+}
+
+figcaption {
+	color: var(--greys-slate-grey, #7D8D9B);
+	text-align: left;
+	leading-trim: both;
+	text-edge: cap;
+	/* Captions/Caption 2/Regular */
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
+}
+
+blockquote {
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	/* Quotes/Quote 1/Italic */
+	font-family: Crimson Pro;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 140%; /* 39.2px */
+	margin: 63px;
+}
+
+ul {
+	color: #57606A;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /* 28.8px */
+}
+
+ol {
+	color: #57606A;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /* 28.8px */
+}
+
+pre {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	border-radius: 16px;
+	border: 1px solid var(--greys-gull-grey, #AEB9CA);
+	background: var(--whites-haze, #EFF2F7);
+}
+
+br {
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	/* Codeblock/Regular */
+	font-family: IBM Plex Mono;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 27px */
+}
+
+hr {
+    margin: 1rem 0;
+    color: #E9EEF4;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+}
+
+p.callout {
+    background: #EFF2F7;
+    padding: 1em;
+    clear: both;
+	border-left: 4px solid var(--greys-fiord, #57606A);
+}
+
+table {
+	display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: #7D8D9B;
+}
+
+thead th {
+	background-color: #7D8D9B;
+	color: #FDFDFD;
+	leading-trim: both;
+	text-edge: cap;
+	/* Body/Body 1/Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 160%; /* 28.8px */
+}
+
+tbody {
+	color: #57606A;
+	leading-trim: both;
+	text-edge: cap;
+	/* Body/Body 1/Regular */
+	font-family: Schibsted Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%; /* 28.8px */
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #FDFDFD;
+	}
+
+tbody tr:nth-child(even) {
+	background-color: #E9EEF4;
+	}
+
+// Resource page
+
+div.container.resource-container{
+	align-items: center;
+	justify-content: space-evenly;
+}
 
 img#resource-image {
 width: 1440px;
 height: 500px;
 flex-shrink: 0;
 background: lightgray 0px -373px / 100% 176.413% no-repeat;
+}
+
+div#container resource-image-container-caption {
+	width: 1200px;
+}
+
+p#resource-image-caption{
+	color: var(--greys-slate-grey, #7D8D9B);
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	/* Captions/Caption 2/Regular */
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
 }
 
 h1#resource-title {
@@ -38,7 +270,7 @@ h1#resource-title {
 	line-height: 145%; /* 60.9px */
 }
 
-div.col-md-8{
+div.col-md-8.resource-left-column{
 	width: 843px;
 }
 
@@ -54,50 +286,196 @@ font-weight: 500;
 line-height: 140%; /* 33.6px */
 }
 
+div.card.resource-card-top{
+	display: flex;
+	width: 756px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	flex-shrink: 0;
+	align-items: center;
+	border: none;
+}
 
+div#col-md-10.resource-card-top-body{
+	display: flex;
+	width: 680px;
+	flex-direction: column;
+	align-items: start;
+	gap: 12px;
+	flex-shrink: 0;
+}
 
+div.col-md-2.resource-card-top-image-container {
+	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+	border-right: 1px #000000;
+}
 
+img.resource-card-top-image{
+	width: 48px;
+	height: 48px;
+	background: lightgray 50% / cover no-repeat;
+}
 
+p#resource-card-top-title{
+	color: #808A9F;
+	leading-trim: both;
+	text-edge: cap;
+	/* Captions/Caption 2/Bold */
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
 
+p#resource-card-top-text{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	/* Captions/Caption 2/Medium */
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 21px */
+	}
 
+div.card-body.key-findings{
+	width: 843px;
+	flex-shrink: 0;
+	border: 0px;
+	border-radius: 16px;
+	background: linear-gradient(204deg, #FFE6C9 -20.61%, #F9F4EF 95.32%);
+}
 
+h4.card-title.key-findings{
+	color: #372611;
+	leading-trim: both;	
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
 
+p.card-text.key-findings{
+	color: #41290C;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 135%; /* 18.9px */
+}
 
+div.card.resource-card-right-date{
+	width: 159px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	border: 1px solid #E9EEF4;
+	background: #FFF;
+}
 
+div.card.m-0.resource-card-right{
+	width: 318px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	border: 1px solid #E9EEF4;
+	background: #FFF;
+}
 
+p.card-title.resource-card-right{
+	color: #808A9F;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
 
+p.card-text.resource-card-right{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
 
+span.card-text.resource-card-right{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
 
+div.col-md-2.resource-card-right-icon-container{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
 
+svg.resource-card-right-icon{
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+}
 
+h2.partners-title{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
 
+img.partners-card{
+	display: flex;
+	width: 176px;
+	height: 140px;
+	object-fit: fit;
+	justify-content: center;
+	align-items: center;
+}
 
+div.card.partners-card{
+	border-radius: 12px 12px 12px 12px;
+	border: 1px solid #C7CED8;
+	background: #FFF;
+	padding-top: 36px;
+	padding-right: 28px;
+}
 
+h5.partners-card{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
 
-
-
-
-
-
-
-// Option B: Include parts of Bootstrap
-
-// Required
-// @import "bootstrap/scss/functions";
-// @import "bootstrap/scss/variables";
-// @import "bootstrap/scss/mixins";
-
-// Optional
-// @import "bootstrap/scss/reboot";
-// @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
-// @import "bootstrap/scss/code";
-// @import "bootstrap/scss/grid";
-
-// Import form plonetheme-barceloneta-base npm package
-
-// @import "@plone/plonetheme-barceloneta-base/scss/grid.scss";
-
-// Import SASS files from your theme
 
 @import "base";

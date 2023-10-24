@@ -37,43 +37,69 @@
 
 <div class="container-fluid g-0">
 
-<img id="resource-image" src="https://imap.sinarproject.org/imap_map-3.png" class="img-fluid text-center" alt="...">
+<img id="resource-image" src="https://imap.sinarproject.org/imap_map-3.png" class="img-fluid text-center" alt="..."></img>
 </div>
 
-<div class="container-fluid ps-5 mt-5">
+<div id="resource-image-caption-container" class="container">
+  <p id="resource-image-caption" class="text-muted text-center">Caption of this image that can be two or three lines 
+    ntamus et iusto odio dignissimos ducimus qui 
+    blanditiis praesentium voluptatum deleniti atque corrupti 
+    quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
+    similique sunt in culpa qui officia deserunt mollitia.</p>
+</div>
+
+<div class="container resource-container">
   <div class="row row-cols-2">
-  <div class="col-md-8">
+  <div class="col-md-8 resource-left-column">
       <h1 id="resource-title">Addressing internet censorship and content filtering — An advocacy toolkit for civil society oganizations</h1>
-      <h4 id="resource-summary"><small class="text-muted mt-3">This toolkit for civil society organization and advocacy movements empowers exisiting movements to navigate internet censorship and content filtering.</small></h4>
+      <h4 id="resource-summary">This toolkit for civil society organization and advocacy movements empowers exisiting movements to navigate internet censorship and content filtering.</h4>
 
 
 <div class"row">
-<div class="card mb-3 mt-4">
+<div class="card resource-card-top">
   <div class="row g-0">
-    <div class="col-md-2">
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    <div class="col-md-2 resource-card-top-image-container">
+      <img class="resource-card-top-image" src="https://imap.sinarproject.org/examples/image-299.png/@@images/cb84badc-8bb5-47db-9a1b-26f6a975c624.png" class="img-fluid rounded-start" alt="...">
     </div>
-    <div class="col-md-10">
-      <div class="card-body resource-top">
+    <div class="col-md-10 resource-card-top-body">
+      <div class="card-body">
       
-        <p class="card-title text-muted">Sustainable development goals — 17.17</p>
-        <p class="card-text">Encourage and promote effective public, public- private, and civil society partnerships, building on the experience and resourcing strategies of partnerships.</p>
+        <p id="resource-card-top-title">Sustainable development goals — 17.17</p>
+        <p id="resource-card-top-text">Encourage and promote effective public, public- private, 
+          and civil society partnerships, building on the experience and resourcing 
+          strategies of partnerships.</p>
      </div>
     </div>
   </div>
 </div>
 </div>
 
-<div class="card mb-3 mt-3">
+<div class="card resource-card-top">
   <div class="row g-0">
-    <div class="col-md-2">
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
-    </div>
+    <div class="col-md-2 resource-card-top-image-container">
+  
+        <svg class="resource-card-top-image" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <g clip-path="url(#clip0_253_753)">
+            <path d="M46.9269 21.6297C48.3565 22.9515 48.3565 25.208 46.9269 26.4534L46.0224 27.3091C45.0439 28.2438 44.6668 29.721 45.1942 30.9664L45.6453 32.1328C46.397 33.9232 45.4185 35.9454 43.6119 36.4904L42.4067 36.8012C41.1275 37.1908 40.2229 38.3573 40.149 39.758L40.0726 41.0034C39.9962 42.7149 38.5667 44.0367 36.9843 44.0367C36.834 44.0367 36.6072 44.0367 36.4569 43.9577L35.2517 43.7234C35.1013 43.7234 34.8746 43.6445 34.7242 43.6445C33.5954 43.6445 32.5405 44.2659 32.013 45.2795L31.4116 46.3696C30.8103 47.4596 29.7554 48.0046 28.7005 48.0046C28.0991 48.0046 27.4213 47.7703 26.8939 47.3832L25.9154 46.6064C25.3879 46.2168 24.7101 45.985 24.1087 45.985C23.5074 45.985 22.8296 46.2193 22.3021 46.6064L21.3236 47.3068C20.7962 47.6965 20.1184 47.9282 19.517 47.9282C18.3882 47.9282 17.3333 47.3068 16.8058 46.2168L16.2045 45.1267C15.677 44.0367 14.6221 43.4153 13.4933 43.4153C13.3429 43.4153 13.1162 43.4153 12.9658 43.4942L11.7606 43.7285C11.6103 43.7285 11.3835 43.8075 11.2332 43.8075C9.57689 43.8075 8.2213 42.4857 8.1449 40.7742L7.8442 39.6842C7.7678 38.2834 6.86572 37.117 5.58654 36.7273L4.3813 36.4166C2.57468 35.8716 1.67014 33.8494 2.34793 32.059L2.79897 30.8925C3.32641 29.6471 3.02572 28.17 1.97083 27.2353L1.06628 26.3796C-0.363241 25.0578 -0.363241 22.8013 1.06628 21.5559L1.97083 20.7001C2.94931 19.7655 3.32641 18.2883 2.79897 17.0429L2.34793 15.8764C1.59619 14.086 2.57468 12.0639 4.3813 11.5188L5.58654 11.2081C6.86572 10.8185 7.77026 9.65201 7.8442 8.25126L7.92061 7.00586C7.99702 5.29439 9.42654 3.97259 11.0089 3.97259C11.1592 3.97259 11.386 3.97259 11.5363 4.05154L12.7416 4.28585C12.8919 4.28585 13.1187 4.3648 13.269 4.3648C14.3978 4.3648 15.4527 3.74338 15.9802 2.72974L16.5816 1.6397C17.1829 0.549659 18.2378 0.00463867 19.2927 0.00463867C19.8941 0.00463867 20.5719 0.238947 21.0994 0.626064L22.0778 1.40285C22.6053 1.79251 23.2831 2.02427 23.8845 2.02427C24.4858 2.02427 25.1636 1.78996 25.6911 1.40285L26.6696 0.702469C27.197 0.312804 27.8748 0.0810434 28.4762 0.0810434C29.605 0.0810434 30.6599 0.702469 31.1874 1.79251L31.7887 2.88255C32.3162 3.97259 33.3711 4.59402 34.4999 4.59402C34.6503 4.59402 34.877 4.59402 35.0274 4.51506L36.2326 4.28076C36.3829 4.28076 36.6097 4.20181 36.76 4.20181C38.4163 4.20181 39.7719 5.52361 39.8483 7.23507L39.9247 8.48047C40.0011 9.88122 40.9032 11.0477 42.1824 11.4373L43.3876 11.748C45.1942 12.2931 46.0988 14.3152 45.421 16.1057L45.1942 17.1168C44.6668 18.3622 44.9675 19.8393 46.0224 20.774L46.9269 21.6297Z" fill="#336F40"/>
+            <path d="M23.999 44.0817C35.4686 44.0817 44.7665 34.7827 44.7665 23.3117C44.7665 11.8408 35.4686 2.54175 23.999 2.54175C12.5294 2.54175 3.23145 11.8408 3.23145 23.3117C3.23145 34.7827 12.5294 44.0817 23.999 44.0817Z" fill="#336F40"/>
+            <path d="M28.3985 27.5696C27.4496 28.5501 25.9166 29.1841 24.4969 29.1841C19.6217 29.1841 19.2076 25.0715 19.1978 23.8109C19.1855 22.2219 19.7228 20.7423 20.6741 19.7517C21.6033 18.7815 22.8899 18.29 24.4969 18.29C25.9486 18.29 27.2697 18.8171 28.2161 19.7746L29.1527 20.722L33.5177 16.3648L32.5343 15.3615C30.3185 13.1027 27.5383 11.9109 24.4969 11.9109C21.1276 11.9109 18.2464 13.0543 16.1613 15.2189C14.0786 17.3834 12.8931 20.5208 12.9103 23.8313C12.9276 26.9355 13.9135 29.7826 15.6905 31.8427C17.7584 34.2416 20.8048 35.5098 24.4969 35.5098C27.7577 35.5098 30.6217 34.346 32.7832 32.1432L33.7444 31.1628L29.3573 26.579L28.3985 27.5696Z" fill="white"/>
+            <path d="M23.9992 40.4965C33.4242 40.4965 41.0647 32.8562 41.0647 23.4315C41.0647 14.0067 33.4242 6.36646 23.9992 6.36646C14.5741 6.36646 6.93359 14.0067 6.93359 23.4315C6.93359 32.8562 14.5741 40.4965 23.9992 40.4965Z" stroke="white" stroke-width="1.27328" stroke-miterlimit="10"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_253_753">
+              <rect width="48" height="47.9999" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+
+      </div>
     <div class="col-md-10">
-      <div class="card-body resource-top">
+      <div class="card-body">
       
-        <p class="card-title text-muted">Copyrights</p>
-        <p class="card-text">Some random long sentence about the copyright claim or somethined ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <p id="resource-card-top-title">Copyrights</p>
+        <p id="resource-card-top-text">Some random long sentence about the copyright claim or 
+          somethined ut perspiciatis unde omnis iste natus error sit voluptatem 
+          accusantium doloremque laudantium, totam rem aperiam.</p>
      </div>
     </div>
       </div>
@@ -81,12 +107,12 @@
 
 <div class="card mb-3 mt-4">
   <div class="row g-0">
-      <div class="card-body">
+      <div class="card-body key-findings">
       
-        <h4 class="card-title">Key Findings</h4>
-        <p class="card-text">• Based on the OONI measurements collected, Timor-Leste seems to be free of government-sanctioned censorship on websites.</p>
-        <p class="card-text">• Even if the government proposes new laws and bills, such as the Criminal Defamation law and the Cybercrime Bill, the state remains committed to democratic rule of law and respect for press and internet freedom.</p>
-        <p class="card-text">• While advancing the Criminal Defamation and Cybercrim Law, Timor-Leste remains free of government blocking and censorship of digital space.</p>
+        <h4 class="card-title key-findings">Key Findings</h4>
+        <p class="card-text key-findings">• Based on the OONI measurements collected, Timor-Leste seems to be free of government-sanctioned censorship on websites.</p>
+        <p class="card-text key-findings">• Even if the government proposes new laws and bills, such as the Criminal Defamation law and the Cybercrime Bill, the state remains committed to democratic rule of law and respect for press and internet freedom.</p>
+        <p class="card-text key-findings">• While advancing the Criminal Defamation and Cybercrim Law, Timor-Leste remains free of government blocking and censorship of digital space.</p>
 
   </div>
 </div>
@@ -104,33 +130,26 @@ Prerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molesti
 </div>
 
 <div class="container-fluid p-0 mt-5">
-<h2>Partners</h2>
+<h2 class="partners-title">Partners</h2>
 <div class="row row-cols-4">
 
-    <div class="card">
-      <img src="https://imap.sinarproject.org/partners/advocacy-and-policy-institute/@@images/700be720-7a02-42e2-9c18-ad5853efff15.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Advocacy and Policy Institute</h5>
+    <div class="card partners-card">
+      <img class="partners-card" src="https://imap.sinarproject.org/partners/advocacy-and-policy-institute/@@images/700be720-7a02-42e2-9c18-ad5853efff15.png" class="card-img-top" alt="...">
+      <div class="card-body partners-card">
+        <h5 class="card-title partners-card">Advocacy and Policy Institute</h5>
       </div>
     </div>
 
   
-  <div class="card">
-      <img src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Centre of Internet Society</h5>
+  <div class="card partners-card">
+      <img class="partners-card" src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png" class="card-img-top" alt="...">
+      <div class="card-body partners-card">
+        <h5 class="card-title partners-card">Centre of Internet Society</h5>
       </div>
     </div>
   
   
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-      </div>
-    </div>
 
-  
 
 </div>
 </div>
@@ -139,40 +158,41 @@ Prerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molesti
   </div>
 
 
-    <div class="col-md-3 g-0">
+    <div class="col-md-3 g-0 right-column">
       <div class="row g-0">
         <div class="col">
-          <div class="card">
+          <div class="card resource-card-right-date">
     <div class="card-body">
         
-<p class="card-title text-muted">Published date</p>    
-      <p class="card-text">FRI, 13 OCT 2023</p>
+<p class="card-title resource-card-right">Published date</p>    
+      <p class="card-text resource-card-right">FRI, 13 OCT 2023</p>
 
 </div>
   </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card resource-card-right-date">
     <div class="card-body">
         
-<p class="card-title text-muted">Modified date</p>    
-      <p class="card-text">SUN, 11 DEC 2023</p>
+<p class="card-title resource-card-right">Modified date</p>    
+      <p class="card-text resource-card-right">SUN, 11 DEC 2023</p>
 
 </div>
   </div>
         </div>
       
       <div class="row mt-3 g-0">
-  <div class="card m-0">
+  <div class="card m-0 resource-card-right">
    <div class="row g-0">
-    <div class="col-md-2">
-      <!-- Replace this image with icon -->
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    <div class="col-md-2 resource-card-right-icon-container">
+      <svg class="resource-card-right-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M34.5043 14.1678V12.2978C34.5111 12.2361 34.5111 12.1813 34.5043 12.1197V10.2497C34.5111 10.188 34.5111 10.1332 34.5043 10.0716V8.11255C34.5043 7.85226 34.3604 7.61936 34.1344 7.50292C33.9015 7.38647 33.6343 7.40702 33.422 7.55087C32.7165 8.0509 32.0246 8.2838 31.2643 8.2838C30.3259 8.2838 29.3327 7.92761 28.2846 7.54402C26.9969 7.07823 25.5242 6.54395 23.8049 6.54395C22.476 6.54395 21.1745 6.85904 19.8251 7.49607C19.5854 7.60566 19.4347 7.84541 19.4347 8.11255V16.5036C19.4347 16.5378 19.4347 16.5652 19.4415 16.5995V18.9352L17.3112 16.805C17.2838 16.7776 17.2564 16.757 17.2291 16.7365L16.7907 16.2981C16.7427 16.2296 16.6811 16.1679 16.6126 16.12L15.3111 14.8185C15.27 14.7637 15.2221 14.7158 15.1673 14.6747L12.3314 11.8388C12.1465 11.6539 11.8657 11.5923 11.6191 11.6813C7.85852 13.0239 6.6461 15.6199 5.67343 17.7023C4.8172 19.5312 4.14592 20.9765 2.04988 21.3395C1.79644 21.3806 1.59095 21.5587 1.5156 21.8053C1.44025 22.0519 1.50875 22.319 1.68684 22.4971L7.55713 28.3674C7.68727 28.4976 7.86537 28.5661 8.04346 28.5661C8.08456 28.5661 8.12566 28.5592 8.15306 28.5592C10.9478 28.0729 11.8931 26.0933 12.8109 24.1822C13.7425 22.23 14.7015 20.223 17.6195 19.0517L19.4415 20.8737V28.7716C19.4415 29.1483 19.7498 29.4565 20.1265 29.4565C20.5033 29.4565 20.8115 29.1483 20.8115 28.7647V22.2505L25.12 26.5591C25.257 26.6892 25.4283 26.7577 25.6064 26.7577C25.7776 26.7577 25.9557 26.6892 26.0858 26.5522C26.353 26.2851 26.353 25.8535 26.0858 25.5864L20.8115 20.3121V16.9556C21.8458 16.5173 22.8459 16.3049 23.8528 16.3049C25.3187 16.3049 26.5927 16.757 27.8257 17.1885C28.9833 17.5927 30.0724 17.9763 31.2369 17.9763C32.2986 17.9763 33.2713 17.6475 34.2166 16.983C34.3947 16.8529 34.5043 16.6474 34.5043 16.4214V14.3938C34.518 14.3116 34.518 14.2363 34.5043 14.1678ZM3.48149 22.3464C5.24874 21.6272 6.05017 20.1408 6.76255 18.6339L7.18039 19.0517C7.16669 19.0859 7.14614 19.1202 7.13244 19.1476C6.32416 20.8737 5.68028 22.2574 3.85138 22.7163L3.48149 22.3464ZM4.93365 23.7986C6.69405 23.0794 7.49548 21.5861 8.20786 20.0792L8.6257 20.497C8.612 20.5312 8.5983 20.5655 8.57775 20.5929C7.77632 22.3259 7.13244 23.7096 5.30354 24.1685L4.93365 23.7986ZM6.76255 25.6275L6.38581 25.2508C8.28321 24.4767 9.06408 22.8054 9.82441 21.182C10.7354 19.2229 11.6876 17.2022 14.5987 16.0241L15.0166 16.4419C12.0163 17.8598 10.9341 20.1682 10.0505 22.0588C9.24218 23.7849 8.5983 25.1686 6.76255 25.6275ZM11.5917 23.5863C10.7697 25.3056 10.1053 26.6824 8.26951 27.1345L7.84482 26.7098C9.74221 25.9357 10.5231 24.2575 11.2903 22.641C12.2013 20.6888 13.1534 18.6613 16.0577 17.4831L16.3454 17.7708L16.5852 18.0105C13.585 19.4216 12.489 21.7094 11.5917 23.5863ZM20.7978 8.55094C21.8184 8.12625 22.8048 7.91391 23.798 7.91391C24.894 7.91391 25.8804 8.16735 26.8256 8.48244V11.1333C25.1543 10.6264 23.1884 10.3182 20.7978 11.1813V8.55094ZM33.1274 16.0446C32.511 16.4145 31.9013 16.5926 31.2301 16.5926C30.2985 16.5926 29.319 16.2501 28.2778 15.8802C27.0037 15.435 25.5516 14.9213 23.8528 14.9213C22.839 14.9213 21.8321 15.1062 20.7978 15.4761V14.7295C23.6953 13.5033 25.7913 14.2705 27.8257 15.0035C28.9422 15.4144 30.0861 15.8254 31.278 15.8254C31.8808 15.8254 32.4973 15.7158 33.1274 15.4487V16.0446ZM33.1274 13.9143C31.5177 14.8733 30.0861 14.3596 28.2983 13.7088C26.3324 12.9965 23.9282 12.1265 20.7978 13.2568V12.6608C23.6953 11.4347 25.7913 12.2019 27.8257 12.9348C28.9422 13.3458 30.0861 13.7568 31.278 13.7568C31.8808 13.7568 32.4973 13.654 33.1274 13.3869V13.9143ZM33.1274 11.8457C31.5177 12.8047 30.0861 12.2909 28.2983 11.6402C28.2641 11.6265 28.2298 11.6128 28.1956 11.606V11.0169C29.1957 11.3799 30.2163 11.7018 31.278 11.7018C31.8808 11.7018 32.4973 11.5991 33.1274 11.332V11.8457ZM33.1274 9.7976C31.5177 10.7566 30.0861 10.2428 28.2983 9.59211C28.2641 9.57841 28.2298 9.56471 28.1956 9.55786V8.97563C29.2231 9.33867 30.2094 9.65376 31.2575 9.65376C31.9082 9.65376 32.5247 9.53046 33.1274 9.27702V9.7976Z" fill="#57606A"/>
+        </svg>
     </div>
     <div class="col-md-10">
     <div class="card-body">     
-  <p class="card-title text-muted">Countries</p>    
-      <p class="card-text">Cambodia, Myanmar, Malaysia</p>
+  <p class="card-title resource-card-right">Countries</p>    
+      <p class="card-text resource-card-right">Cambodia, Myanmar, Malaysia</p>
     </div>
   </div>
 </div>
@@ -180,16 +200,55 @@ Prerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molesti
   </div>
 
  <div class="row mt-3 g-0">
-  <div class="card m-0">
+  <div class="card m-0 resource-card-right">
    <div class="row g-0">
-    <div class="col-md-2">
-      <!-- Replace this image with icon -->
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    <div class="col-md-2 resource-card-right-icon-container">
+      <svg class="resource-card-right-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M17.9998 17.5688C16.5887 17.5688 15.3862 17.0718 14.3923 16.0779C13.3983 15.0839 12.9013 13.8814 12.9013 12.4703C12.9013 11.0593 13.3983 9.85677 14.3923 8.86279C15.3862 7.86881 16.5887 7.37183 17.9998 7.37183C19.4108 7.37183 20.6134 7.86881 21.6073 8.86279C22.6013 9.85677 23.0983 11.0593 23.0983 12.4703C23.0983 13.8814 22.6013 15.0839 21.6073 16.0779C20.6134 17.0718 19.4108 17.5688 17.9998 17.5688ZM7.02246 26.4405V25.413C7.02246 24.6984 7.21376 24.0414 7.59636 23.4419C7.97896 22.8424 8.49986 22.3792 9.15906 22.0524C10.6244 21.3455 12.0938 20.8122 13.5671 20.4524C15.0405 20.0926 16.5181 19.9127 18 19.9127C19.4819 19.9127 20.96 20.0925 22.4344 20.4521C23.9087 20.8117 25.378 21.345 26.8423 22.0519C27.5009 22.3788 28.0214 22.842 28.4037 23.4416C28.786 24.0411 28.9771 24.6982 28.9771 25.4129V26.4405C28.9771 27.0315 28.7703 27.5338 28.3567 27.9474C27.9431 28.361 27.4408 28.5678 26.8498 28.5678H9.1498C8.55877 28.5678 8.05646 28.361 7.64286 27.9474C7.22926 27.5338 7.02246 27.0315 7.02246 26.4405ZM9.12096 26.4693H26.8786V25.4169C26.8786 25.107 26.7907 24.8221 26.6147 24.5619C26.4387 24.3018 26.1959 24.0876 25.8863 23.9193C24.6005 23.2905 23.2994 22.8152 21.9833 22.4936C20.6671 22.172 19.339 22.0112 17.9989 22.0112C16.65 22.0112 15.3197 22.172 14.0079 22.4936C12.6961 22.8152 11.4003 23.2905 10.1205 23.9193C9.80606 24.0876 9.56086 24.3022 9.38489 24.5633C9.20894 24.8243 9.12096 25.1083 9.12096 25.415V26.4693ZM17.9998 15.4703C18.8248 15.4703 19.531 15.1766 20.1185 14.5891C20.706 14.0016 20.9998 13.2953 20.9998 12.4703C20.9998 11.6453 20.706 10.9391 20.1185 10.3516C19.531 9.76408 18.8248 9.47033 17.9998 9.47033C17.1748 9.47033 16.4685 9.76408 15.881 10.3516C15.2935 10.9391 14.9998 11.6453 14.9998 12.4703C14.9998 13.2953 15.2935 14.0016 15.881 14.5891C16.4685 15.1766 17.1748 15.4703 17.9998 15.4703Z" fill="#57606A"/>
+      </svg>
     </div>
     <div class="col-md-10">
     <div class="card-body">     
-  <p class="card-title text-muted">Author(s)</p>    
-      <p class="card-text">Siti Khadijah, Farah Wadiha, Samuel Oommen</p>
+  <p class="card-title resource-card-right">Author(s)</p>    
+      <p class="card-text resource-card-right">Siti Khadijah, Farah Wadiha, Samuel Oommen</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+  <div class="row mt-3 g-0">
+    <div class="card m-0 resource-card-right">
+     <div class="row g-0">
+      <div class="col-md-2 resource-card-right-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M28.2699 12.571C28.6923 12.571 29.0552 12.4235 29.3586 12.1285C29.6619 11.8334 29.8136 11.4678 29.8136 11.0317C29.8136 10.6093 29.6622 10.2464 29.3593 9.94302C29.0564 9.63964 28.69 9.48795 28.2601 9.48795C27.8302 9.48795 27.4678 9.6394 27.1729 9.94229C26.878 10.2451 26.7305 10.6115 26.7305 11.0415C26.7305 11.4714 26.878 11.8338 27.1731 12.1287C27.4681 12.4236 27.8337 12.571 28.2699 12.571ZM28.2675 14.6241C27.2551 14.6241 26.4036 14.2789 25.7132 13.5886C25.0227 12.8984 24.6775 12.0458 24.6775 11.0311C24.6775 10.0362 25.0226 9.18814 25.7129 8.48688C26.4032 7.78559 27.2557 7.43495 28.2705 7.43495C29.2654 7.43495 30.1134 7.78486 30.8147 8.48468C31.516 9.18449 31.8666 10.0343 31.8666 11.034C31.8666 12.0465 31.5167 12.8979 30.8169 13.5884C30.1171 14.2789 29.2673 14.6241 28.2675 14.6241ZM17.9965 11.1036C18.62 11.1036 19.1556 10.8855 19.6034 10.4492C20.0511 10.013 20.275 9.47372 20.275 8.83148C20.275 8.20802 20.0511 7.67241 19.6034 7.22466C19.1556 6.77689 18.6211 6.553 18 6.553C17.354 6.553 16.8133 6.77689 16.3777 7.22466C15.9422 7.67241 15.7244 8.20686 15.7244 8.82799C15.7244 9.47398 15.9425 10.0147 16.3788 10.4503C16.815 10.8858 17.3543 11.1036 17.9965 11.1036ZM17.997 13.1566C16.7801 13.1566 15.755 12.7398 14.9216 11.9063C14.0881 11.0728 13.6714 10.0489 13.6714 8.8346C13.6714 7.6409 14.0882 6.62005 14.9217 5.77204C15.7552 4.92401 16.7791 4.5 17.9934 4.5C19.1871 4.5 20.208 4.92279 21.056 5.76838C21.904 6.61396 22.328 7.63485 22.328 8.83104C22.328 10.0479 21.9052 11.073 21.0596 11.9064C20.214 12.7399 19.1931 13.1566 17.997 13.1566ZM11.6606 19.6544C11.6606 20.4785 12.0682 21.4046 12.8833 22.4328C13.6984 23.4609 15.3133 25.0761 17.7281 27.2783L17.9962 27.5181L18.2925 27.2359C20.6227 25.1294 22.213 23.5467 23.0633 22.4877C23.9136 21.4287 24.3388 20.4854 24.3388 19.6578C24.3388 18.9509 24.1099 18.3585 23.6521 17.8807C23.1944 17.4028 22.6298 17.1639 21.9584 17.1639C21.5538 17.1639 21.1663 17.2563 20.7957 17.4412C20.425 17.626 20.1146 17.8718 19.8644 18.1785L18.2487 20.0989H17.7281L16.0913 18.1785C15.8411 17.8718 15.5333 17.626 15.168 17.4412C14.8027 17.2563 14.4236 17.1639 14.0305 17.1639C13.335 17.1639 12.7662 17.4026 12.3239 17.8801C11.8817 18.3575 11.6606 18.949 11.6606 19.6544ZM9.6076 19.6509C9.6076 18.4704 10.0431 17.4186 10.9142 16.4955C11.7853 15.5724 12.8252 15.1109 14.034 15.1109C14.7536 15.1109 15.4431 15.2851 16.1025 15.6337C16.762 15.9822 17.332 16.4504 17.8127 17.0384L17.9962 17.2501L18.1796 17.0243C18.6622 16.4457 19.229 15.9822 19.8799 15.6337C20.5309 15.2851 21.2237 15.1109 21.9584 15.1109C23.1502 15.1109 24.1871 15.575 25.069 16.5032C25.9509 17.4314 26.3918 18.48 26.3918 19.649C26.3918 20.8539 25.9316 22.0678 25.0111 23.2907C24.0906 24.5135 22.2612 26.3803 19.5229 28.891L17.9962 30.3035L16.4864 28.9333C13.6831 26.3606 11.8358 24.4753 10.9445 23.2777C10.0533 22.0801 9.6076 20.8711 9.6076 19.6509ZM7.7252 12.571C8.14761 12.571 8.51051 12.4235 8.81388 12.1285C9.11723 11.8334 9.26891 11.4678 9.26891 11.0317C9.26891 10.6093 9.11748 10.2464 8.81462 9.94302C8.51173 9.63964 8.14532 9.48795 7.7154 9.48795C7.28548 9.48795 6.92307 9.6394 6.62818 9.94229C6.33327 10.2451 6.18581 10.6115 6.18581 11.0415C6.18581 11.4714 6.33334 11.8338 6.6284 12.1287C6.92344 12.4236 7.28904 12.571 7.7252 12.571ZM18.1062 31.5V29.447H29.8136V19.4781C29.8136 19.3605 29.7677 19.2558 29.676 19.1641C29.5843 19.0724 29.4796 19.0265 29.362 19.0265H25.3632V16.9735H29.362C30.0458 16.9735 30.6342 17.22 31.1271 17.713C31.6201 18.206 31.8666 18.7943 31.8666 19.4781V30.2503C31.8666 30.6018 31.7444 30.898 31.5001 31.1388C31.2558 31.3796 30.9593 31.5 30.6108 31.5H18.1062ZM6.18581 29.447H18.1062V31.5H5.38156C5.03304 31.5 4.73778 31.379 4.49579 31.137C4.25381 30.895 4.13281 30.5998 4.13281 30.2512V19.4828C4.13281 18.7935 4.37409 18.203 4.85665 17.7112C5.33923 17.2194 5.93281 16.9735 6.63739 16.9735H10.6066V19.0265H6.63739C6.50569 19.0265 6.3975 19.0724 6.31282 19.1641C6.22815 19.2558 6.18581 19.3605 6.18581 19.4781V29.447ZM7.72285 14.6241C6.71041 14.6241 5.85896 14.2789 5.16848 13.5886C4.47804 12.8984 4.13281 12.0458 4.13281 11.0311C4.13281 10.0362 4.47795 9.18814 5.16823 8.48688C5.85853 7.78559 6.71106 7.43495 7.72582 7.43495C8.72067 7.43495 9.56874 7.78486 10.27 8.48468C10.9713 9.18449 11.3219 10.0343 11.3219 11.034C11.3219 12.0465 10.972 12.8979 10.2722 13.5884C9.57237 14.2789 8.72259 14.6241 7.72285 14.6241Z" fill="#57606A"/>
+        </svg>
+      </div>
+      <div class="col-md-10">
+      <div class="card-body">     
+    <p class="card-title resource-card-right">Development themes</p>    
+        <p class="card-text resource-card-right">Human rights</p>
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>   
+
+<div class="row mt-3 g-0">
+  <div class="card m-0 resource-card-right">
+   <div class="row g-0">
+    <div class="col-md-2 resource-card-right-icon-container">
+       <svg class="resource-card-right-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M4.04692 24.7097C3.85104 25.4437 4.28623 26.1988 5.02114 26.3966L8.11067 27.2241C8.7523 27.396 9.33936 26.8088 9.16741 26.1672L6.9673 17.9578C6.81495 17.3893 6.00829 17.3893 5.85597 17.9578L4.04692 24.7097Z" stroke="#57606A" stroke-width="1.8"/>
+        <path d="M12.8549 29.4759C13.0528 30.2103 13.8073 30.6463 14.5416 30.4501L19.366 29.1567C19.4729 29.1281 19.5087 28.9944 19.4305 28.9161L11.7618 21.2484C11.3456 20.8322 10.647 21.2356 10.7993 21.804L12.8549 29.4759Z" stroke="#57606A" stroke-width="1.8"/>
+        <path d="M30.8736 17.145L20.1264 6.39722C19.8727 6.14353 19.5287 6.00115 19.17 6.00086L11.8293 6C10.8151 6 9.99213 6.82264 9.99213 7.83713L9.99184 15.179C9.99184 15.5377 10.1342 15.882 10.3879 16.1357L21.1357 26.8832C21.4049 27.1524 21.7573 27.2867 22.1096 27.2867C22.462 27.2867 22.8143 27.1521 23.0836 26.8832L30.8736 19.092C31.4112 18.5541 31.4112 17.6826 30.8736 17.145ZM13.971 11.0814C13.1768 11.0814 12.5328 10.4373 12.5328 9.64319C12.5328 8.84903 13.1768 8.20501 13.971 8.20501C14.7652 8.20501 15.4092 8.84903 15.4092 9.64319C15.4092 10.4376 14.7652 11.0814 13.971 11.0814Z" stroke="#57606A" stroke-width="1.8"/>
+      </svg>
+    </div>
+    <div class="col-md-10">
+    <div class="card-body">     
+  <p class="card-title resource-card-right">Tags</p>    
+      <p class="card-text resource-card-right">dns, military, tagname, another, moretag, etc, listing</p>
     </div>
   </div>
 </div>
@@ -198,36 +257,26 @@ Prerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molesti
 
 
 <div class="row mt-3 g-0">
-  <div class="card m-0">
+  <div class="card m-0 resource-card-right">
    <div class="row g-0">
-    <div class="col-md-2">
-      <!-- Replace this image with icon -->
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
+    <div class="col-md-2 resource-card-right-icon-container">
+      <svg class="resource-card-right-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M24.4167 31.4583H8.83333C7.275 31.4583 6 30.1833 6 28.625V7.375C6 5.81667 7.275 4.54167 8.83333 4.54167H24.4167C25.975 4.54167 27.25 5.81667 27.25 7.375V28.625C27.25 30.1833 25.975 31.4583 24.4167 31.4583ZM8.83333 5.95833C8.05417 5.95833 7.41667 6.59583 7.41667 7.375V28.625C7.41667 29.4042 8.05417 30.0417 8.83333 30.0417H24.4167C25.1958 30.0417 25.8333 29.4042 25.8333 28.625V7.375C25.8333 6.59583 25.1958 5.95833 24.4167 5.95833H8.83333Z" fill="#57606A"/>
+        <path d="M27.9583 35H12.375C10.8167 35 9.54167 33.725 9.54167 32.1667V30.0417H24.4167C25.1958 30.0417 25.8333 29.4042 25.8333 28.625V7.375H27.9583C29.5167 7.375 30.7917 8.65 30.7917 10.2083V32.1667C30.7917 33.725 29.5167 35 27.9583 35ZM10.9583 31.4583V32.1667C10.9583 32.9458 11.5958 33.5833 12.375 33.5833H27.9583C28.7375 33.5833 29.375 32.9458 29.375 32.1667V10.2083C29.375 9.42917 28.7375 8.79167 27.9583 8.79167H27.25V28.625C27.25 30.1833 25.975 31.4583 24.4167 31.4583H10.9583Z" fill="#57606A"/>
+        <path d="M12.375 12.3333C11.1708 12.3333 10.25 11.4125 10.25 10.2083V3.83333C10.25 2.275 11.525 1 13.0833 1C14.6417 1 15.9167 2.275 15.9167 3.83333V5.25C15.9167 5.675 15.6333 5.95833 15.2083 5.95833C14.7833 5.95833 14.5 5.675 14.5 5.25V3.83333C14.5 3.05417 13.8625 2.41667 13.0833 2.41667C12.3042 2.41667 11.6667 3.05417 11.6667 3.83333V10.2083C11.6667 10.6333 11.95 10.9167 12.375 10.9167C12.8 10.9167 13.0833 10.6333 13.0833 10.2083V8.08333C13.0833 7.65833 13.3667 7.375 13.7917 7.375C14.2167 7.375 14.5 7.65833 14.5 8.08333V10.2083C14.5 11.4125 13.5792 12.3333 12.375 12.3333Z" fill="#57606A"/>
+        <path d="M23 18H10.25C9.825 18 9.54167 17.7167 9.54167 17.2917C9.54167 16.8667 9.825 16.5833 10.25 16.5833H23C23.425 16.5833 23.7083 16.8667 23.7083 17.2917C23.7083 17.7167 23.425 18 23 18Z" fill="#57606A"/>
+        <path d="M23 26.5H10.25C9.825 26.5 9.54167 26.2167 9.54167 25.7917C9.54167 25.3667 9.825 25.0833 10.25 25.0833H23C23.425 25.0833 23.7083 25.3667 23.7083 25.7917C23.7083 26.2167 23.425 26.5 23 26.5Z" fill="#57606A"/>
+        <path d="M20.1667 22.25H13.0833C12.6583 22.25 12.375 21.9667 12.375 21.5417C12.375 21.1167 12.6583 20.8333 13.0833 20.8333H20.1667C20.5917 20.8333 20.875 21.1167 20.875 21.5417C20.875 21.9667 20.5917 22.25 20.1667 22.25Z" fill="#57606A"/>
+        <path d="M24.4167 31.4583H8.83333C7.275 31.4583 6 30.1833 6 28.625V7.375C6 5.81667 7.275 4.54167 8.83333 4.54167H24.4167C25.975 4.54167 27.25 5.81667 27.25 7.375V28.625M24.4167 31.4583C25.975 31.4583 27.25 30.1833 27.25 28.625M24.4167 31.4583H10.9583V32.1667C10.9583 32.9458 11.5958 33.5833 12.375 33.5833H27.9583C28.7375 33.5833 29.375 32.9458 29.375 32.1667V10.2083C29.375 9.42917 28.7375 8.79167 27.9583 8.79167H27.25V28.625M24.4167 30.0417H8.83333C8.05417 30.0417 7.41667 29.4042 7.41667 28.625V7.375C7.41667 6.59583 8.05417 5.95833 8.83333 5.95833H24.4167C25.1958 5.95833 25.8333 6.59583 25.8333 7.375M24.4167 30.0417C25.1958 30.0417 25.8333 29.4042 25.8333 28.625V7.375M24.4167 30.0417H9.54167V32.1667C9.54167 33.725 10.8167 35 12.375 35H27.9583C29.5167 35 30.7917 33.725 30.7917 32.1667V10.2083C30.7917 8.65 29.5167 7.375 27.9583 7.375H25.8333M12.375 12.3333C11.1708 12.3333 10.25 11.4125 10.25 10.2083V3.83333C10.25 2.275 11.525 1 13.0833 1C14.6417 1 15.9167 2.275 15.9167 3.83333V5.25C15.9167 5.675 15.6333 5.95833 15.2083 5.95833C14.7833 5.95833 14.5 5.675 14.5 5.25V3.83333C14.5 3.05417 13.8625 2.41667 13.0833 2.41667C12.3042 2.41667 11.6667 3.05417 11.6667 3.83333V10.2083C11.6667 10.6333 11.95 10.9167 12.375 10.9167C12.8 10.9167 13.0833 10.6333 13.0833 10.2083V8.08333C13.0833 7.65833 13.3667 7.375 13.7917 7.375C14.2167 7.375 14.5 7.65833 14.5 8.08333V10.2083C14.5 11.4125 13.5792 12.3333 12.375 12.3333ZM23 18H10.25C9.825 18 9.54167 17.7167 9.54167 17.2917C9.54167 16.8667 9.825 16.5833 10.25 16.5833H23C23.425 16.5833 23.7083 16.8667 23.7083 17.2917C23.7083 17.7167 23.425 18 23 18ZM23 26.5H10.25C9.825 26.5 9.54167 26.2167 9.54167 25.7917C9.54167 25.3667 9.825 25.0833 10.25 25.0833H23C23.425 25.0833 23.7083 25.3667 23.7083 25.7917C23.7083 26.2167 23.425 26.5 23 26.5ZM20.1667 22.25H13.0833C12.6583 22.25 12.375 21.9667 12.375 21.5417C12.375 21.1167 12.6583 20.8333 13.0833 20.8333H20.1667C20.5917 20.8333 20.875 21.1167 20.875 21.5417C20.875 21.9667 20.5917 22.25 20.1667 22.25Z" stroke="#57606A" stroke-width="0.2"/>
+      </svg>
     </div>
     <div class="col-md-10">
     <div class="card-body">     
-  <p class="card-title text-muted">Tags</p>    
-      <p class="card-text">dns, military, tagname, another, moretag, etc, listing</p>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
-
-<div class="row mt-3 g-0">
-  <div class="card m-0">
-   <div class="row g-0">
-    <div class="col-md-2">
-      <!-- Replace this image with icon -->
-      <img src="https://mdbcdn.b-cdn.net/img/new/slides/003.webp" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-10">
-    <div class="card-body">     
-  <p class="card-title text-muted">Attachment(s)</p>    
-      <p class="card-text">iMAP Internet Censorship Timor-Leste Report</p>
-      <span class="card-text"><small class="text-muted">PDF file</small></span>
-      <span class="card-text"><small class="text-muted">•</small></span> 
-        <span class="card-text"><small class="text-muted">246kB</small></span>
+  <p class="card-title resource-card-right">Attachment(s)</p>    
+      <p class="card-text resource-card-right">iMAP Internet Censorship Timor-Leste Report</p>
+      <span class="card-text resource-card-right"><small class="text-muted">PDF file</small></span>
+      <span class="card-text resource-card-right"><small class="text-muted">•</small></span> 
+        <span class="card-text resource-card-right"><small class="text-muted">246kB</small></span>
     </div>
   </div>
 </div>
