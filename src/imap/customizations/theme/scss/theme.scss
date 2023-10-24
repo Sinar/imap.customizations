@@ -1,12 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 // Bootstrap Variable Overrides
 
 $enable-rounded: false;
-$primary: #007eb6;
-$secondary: #2e3133;
+$primary: #61a4b7;
+$secondary: #74d985;
+$margin: 16px;
 
 // Option A: Include all of Bootstrap
 
 @import "bootstrap/scss/bootstrap";
+
+// Prefix for :root CSS variables
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+$font-family: 'Schibsted Grotesk';
+
+img#resource-image {
+width: 1440px;
+height: 500px;
+flex-shrink: 0;
+background: lightgray 0px -373px / 100% 176.413% no-repeat;
+}
+
+h1#resource-title {
+   color: #2A2B2E;
+   leading-trim: both;
+   text-edge: cap;
+/* Titles/Title 1/Bold */
+   font-family: Schibsted Grotesk;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 145%; /* 60.9px */
+}
+
+div.col-md-8{
+	width: 843px;
+}
+
+h4#resource-summary {
+color: #57606A;
+leading-trim: both;
+text-edge: cap;
+/* Subtitles/Subtitle 2/Medium */
+font-family: Schibsted Grotesk;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 33.6px */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Option B: Include parts of Bootstrap
 

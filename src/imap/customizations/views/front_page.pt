@@ -4,7 +4,19 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       i18n:domain="imap.customizations"
       metal:use-macro="context/main_template/macros/master">
+
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Bootstrap</title>
+    <link href="theme/css/theme.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+
 <body>
+    <span class="material-icons">&#xE87C;</span>
 
 <metal:main fill-slot="main">
     <tal:main-macro metal:define-macro="main"
