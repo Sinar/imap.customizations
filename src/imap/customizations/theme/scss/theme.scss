@@ -227,23 +227,33 @@ tbody tr:nth-child(even) {
 	background-color: #E9EEF4;
 	}
 
+
 // Resource page
 
-div.container.resource-container{
+div.container-fluid.resource-image{
+//	height: 500px;
+	display: block;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-items: center;
+//	margin-bottom: 24px;
 }
 
 img#resource-image {
-width: 1440px;
-height: 500px;
-flex-shrink: 0;
-background: lightgray 0px -373px / 100% 176.413% no-repeat;
+	height: 500px;
+	width: 1440px;
+	object-fit: fill;
+	align-self: center;
+	justify-self: center;
+	background-size: 100% auto;
 }
 
-div#container resource-image-container-caption {
+div.container-fluid.resource-image-caption {
+	display: block;
+	margin-top: 24px;
 	width: 1200px;
+	text-align: center;
 }
+  
 
 p#resource-image-caption{
 	color: var(--greys-slate-grey, #7D8D9B);
@@ -256,6 +266,19 @@ p#resource-image-caption{
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 21px */
+}
+
+div.container-fluid.resource-columns-container{
+	display: inline-block;
+	width: 1440px;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+div.row.row-cols-2.resource-columns{
+	padding-left: 120px;
+	padding-right: 120px;
+	justify-content: space-between;
 }
 
 h1#resource-title {
@@ -271,19 +294,20 @@ h1#resource-title {
 }
 
 div.col-md-8.resource-left-column{
+	display: inline-block;
 	width: 843px;
 }
 
 h4#resource-summary {
-color: #57606A;
-leading-trim: both;
-text-edge: cap;
-/* Subtitles/Subtitle 2/Medium */
-font-family: Schibsted Grotesk;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 33.6px */
+	color: #57606A;
+	leading-trim: both;
+	text-edge: cap;
+	/* Subtitles/Subtitle 2/Medium */
+	font-family: Schibsted Grotesk;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 33.6px */
 }
 
 div.card.resource-card-top{
@@ -308,7 +332,6 @@ div#col-md-10.resource-card-top-body{
 }
 
 div.col-md-2.resource-card-top-image-container {
-	
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -346,10 +369,14 @@ p#resource-card-top-text{
 	line-height: 150%; /* 21px */
 	}
 
+div.card.mb-3.mt-4.key-findings{
+	border-width: 0px;
+}
+
 div.card-body.key-findings{
 	width: 843px;
 	flex-shrink: 0;
-	border: 0px;
+	border-width: 0px;
 	border-radius: 16px;
 	background: linear-gradient(204deg, #FFE6C9 -20.61%, #F9F4EF 95.32%);
 }
@@ -376,12 +403,27 @@ p.card-text.key-findings{
 	line-height: 135%; /* 18.9px */
 }
 
+div.col-md-4.resource-right-column{
+	display: inline-block;
+	width: 326px;
+	align-items: end;
+}
+
+div.container.side-bar{
+	width: 318px;
+	position: sticky;
+	align-items: end;
+	top: 20px;
+	bottom: 20px;
+}
+
 div.card.resource-card-right-date{
-	width: 159px;
+// 	width: 159px;
 	flex-shrink: 0;
 	border-radius: 12px;
 	border: 1px solid #E9EEF4;
 	background: #FFF;
+	padding: 0px;
 }
 
 div.card.m-0.resource-card-right{
@@ -453,7 +495,7 @@ img.partners-card{
 	display: flex;
 	width: 176px;
 	height: 140px;
-	object-fit: fit;
+	object-fit: fill;
 	justify-content: center;
 	align-items: center;
 }
@@ -463,7 +505,8 @@ div.card.partners-card{
 	border: 1px solid #C7CED8;
 	background: #FFF;
 	padding-top: 36px;
-	padding-right: 28px;
+	margin-right: 28px;
+	margin-bottom: 28px;
 }
 
 h5.partners-card{
@@ -477,5 +520,378 @@ h5.partners-card{
 	line-height: normal;
 }
 
+// Country page
 
+div.container.country-banner{
+	display: grid;
+	width: 1440px;
+	height: 217px;
+	flex-shrink: 0;
+	background: linear-gradient(180deg, #243D91 -17.74%, #E73247 265.9%);
+	align-items: center;
+}
+
+svg.country-map{
+	display: grid;
+	flex-shrink: 0;
+	fill: #67579F;
+	opacity: 0.33;
+	mix-blend-mode: multiply;
+	justify-self: center;
+	align-self: center;
+	position: relative;
+}
+
+div.container.country-banner-text{
+	position: absolute;
+}
+
+h1.container.country-banner-text{
+	color: #FFF;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+p.container.country-banner-text{
+	color: #FFF;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 24px */
+}
+
+div.container.breadcrumb{
+	display: grid;
+	padding-top: 16px;
+}
+
+div.container.country-items{
+	display: grid;
+}
+
+div.container.country-resources{
+	display: grid;
+
+}
+
+div.row.g-0.country-resources{
+	width: 1200px;
+	height: 266px;
+}
+
+h2.country-resources{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%; /* 50.4px */
+}
+
+div.card.mb-3.country-resources{
+	display: flex;
+	width: 1200px;
+	height: 266px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-width: 0px;
+	border-radius: 12px;
+	border: 1px solid #CABEBE;
+	background: #FFF;
+}
+
+div.col-md-3.country-resources-image{
+	width: 486px;
+	height: 266px;
+	align-items: start;
+}
+
+img.country-resources-image{
+	display: inline-block;
+	width: 486px;
+	height: 90%;
+	object-fit: fill;
+	background-size: 100% auto;
+}
+
+div.col-md-8.country-resources-body{
+	width: 714px;
+	height: 266px;
+	align-self: center;
+}
+
+img.country-flag-icon{
+	width: 30.769px;
+	height: 20px;
+	flex-shrink: 0;
+	border-radius: 2.5px;
+	border: 2px solid #FFF;
+}
+
+h5.card-title.country-resource-card{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+p.card-text.country-resource-card{
+	color: #6E7B8B;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
+}
+
+span.badge.country-resource-card{
+	color: #847B67;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 18px */
+	border-radius: 6px;
+	background: #FFF6E3;
+}
+
+p.text-center.resource-text{
+	width: 1200px;
+}
+
+div.row.row-cols-4.partner-icon{
+	padding: 16px 16px 0 16px;
+}
+
+
+div.card.partner-icon{
+	padding: 0px;
+	width: 68px;
+	height: 52px;
+	flex-shrink: 0;
+	stroke-width: 1px;
+	stroke: #EFF2F7;
+//	object-fit:fit;
+	margin-right: 12px;
+}
+
+img.partner-icon {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	justify-content: center;
+	align-items: center;
+}
+
+div.card.mb-3.country-partners{
+	display: flex;
+	width: 1200px;
+	height: max-content;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-width: 0px;
+	border-radius: 12px;
+	border: 1px solid #CABEBE;
+	background: #FFF;
+}
+
+div.container.country-partners{
+	display: grid;
+}
+div.row.g-0.country-partners{
+	width: 1200px;
+	height: auto;
+}
+
+div.col-md-3.country-partners-image{
+	width: 486px;
+	height: 266px;
+	align-items: start;
+}
+
+img.country-partners-image{
+	display: inline-block;
+	width: 486px;
+	height: 90%;
+	object-fit: fill;
+	background-size: 100% auto;
+}
+
+div.col-md-8.country-partners-body{
+	width: 714px;
+	height: max-content;
+	align-self: center;
+}
+
+h5.card-title.country-partners-card{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+p.card-text.country-resource-card{
+	color: #6E7B8B;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
+}
+
+span.badge.country-partners-card{
+	color: #847B67;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 18px */
+	border-radius: 6px;
+	background: #E3F2FF;
+}
+
+div.card.partner-social-media-icon{
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+	stroke-width: 1px;
+	stroke: #EFF2F7;
+//	object-fit:fit;
+	border-width: 0px;
+	margin-right: 12px;
+}
+
+img.social-media-icon {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container.country-news-events{
+	display: grid;
+}
+
+h2.country-news-events{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%; /* 50.4px */
+}
+
+h3.country-news-events{
+	color: #6E7B8B;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+div.row.row-cols-2.country-news-events{
+	display: flex;
+	width: 1200px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+div.col.news-events{
+	display: inline-block;
+	width: 576px;
+}
+
+div.card.news-events{
+	display: flex;
+	width: 576px;
+	padding: 20px 28px 25px 24px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	border: 1px solid #C8CED8;
+	background: #FFF;
+	margin: 28px 0px 0px 0px;
+	height: max-content;
+}
+
+div.card-body.news-events{
+	align-items: start;
+	height: auto;
+}
+
+.card-text.news-events{
+	color: #6E7B8B;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 21px */
+}
+
+.card-text.event {
+	color: #166FFF;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%; /* 21px */
+}
+
+h5.card-title.news-events{
+	color: #2A2B2E;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: Schibsted Grotesk;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 520px;
+}
+
+svg.event-date{
+	width: 20px;
+	height: 20px;
+}
 @import "base";
