@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Custom Bootstrap</title>
     <!-- <link href="theme/css/theme.css" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=family=Crimson+Pro&family=IBM+Plex+Mono&family=Schibsted+Grotesk&display=swap">
+    <link href="@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=IBM+Plex+Mono&family=Schibsted+Grotesk&display=swap'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     </head>
@@ -69,7 +69,15 @@
                   <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Resource</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">So
+                      api.search("Censorship Event")
+                      ￼
+                      ￼
+                      ￼
+                      ￼
+                      ￼
+                      ￼
+                      me quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p>Published: </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>

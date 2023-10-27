@@ -116,16 +116,19 @@ figcaption {
 }
 
 blockquote {
+	margin: 48px 0px 48px 0;
+}
+
+blockquote p {
 	color: #2A2B2E;
+	text-align: center;
 	leading-trim: both;
 	text-edge: cap;
-	/* Quotes/Quote 1/Italic */
 	font-family: Crimson Pro;
 	font-size: 28px;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 140%; /* 39.2px */
-	margin: 63px;
 }
 
 ul {
@@ -174,8 +177,7 @@ br {
 hr {
     margin: 1rem 0;
     color: #E9EEF4;
-    border: 0;
-    border-top: var(--bs-border-width) solid;
+    border-top: 1px solid;
 }
 
 p.callout {
