@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="imap.customizations.AddInternetCensorshipEvent"
+        title="imap.customizations: Add InternetCensorshipEvent"
+    />
+
+
+    <permission
         id="imap.customizations.AddPerson"
         title="imap.customizations: Add Person"
     />
