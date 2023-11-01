@@ -10,3 +10,6 @@
   });
 
 })(jQuery); // End of use strict
+
+import "bootstrap/scss/bootstrap";
+
