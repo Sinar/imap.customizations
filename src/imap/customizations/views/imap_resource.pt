@@ -248,7 +248,7 @@
                 </div>
                 <div class="col-md-10">
                   <div class="card-body">
-                    <p tal:content="context/countries" class="card-title resource-card-right">Countries</p>
+                    <p class="card-title resource-card-right">Countries</p>
                     <span tal:define="countries context/countries" 
                     tal:repeat="country view/country_title" 
                     tal:content="country" class="card-text resource-card-right">Malaysia, Cambodia</span>
