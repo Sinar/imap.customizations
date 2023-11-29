@@ -1,12 +1,7 @@
-// Custom JavaScript
+import "bootstrap/dist/js/bootstrap.min.js"
 
-(function($) {
-  'use strict'; // Start of use strict
 
-  $(document).ready(function() {
+t
 
-    // Your custom JavaScript goes here
 
-  });
 
-})(jQuery); // End of use strict

@@ -6,6 +6,11 @@
   <configure zcml:condition="installed AccessControl.security">
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="imap.customizations.AddInternetCensorshipEvent"
+        title="imap.customizations: Add InternetCensorshipEvent"
+    />
+
 
   </configure>
 

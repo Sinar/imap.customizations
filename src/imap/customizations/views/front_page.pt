@@ -1,75 +1,398 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      i18n:domain="imap.customizations"
-      metal:use-macro="context/main_template/macros/master">
-<body>
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="imap.customizations"
+  metal:use-macro="context/main_template/macros/master">
 
-<metal:main fill-slot="main">
-    <tal:main-macro metal:define-macro="main"
-        tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
 
-    <div>
-        <h1>Boo!</h1>
-        <p>some content here about 2020 report</p>
-        Probably some banner image
-        <button type="button" class="btn btn-primary">Read the report</button>
-    </div>
+  <body>
+    <metal:content-core fill-slot="content-core">
+      <metal:block define-macro="content-core">
+        <div class="container front-page">
+        <div class="container front-page-banner">
 
-    <div class="container">
-        <div class="row row-cols-3">
-            <div class="col">
-                <div tal:repeat="news view/latest_news" class="card">
-                  <img src="#" class="card-img-top" alt="">
-                  <img  
-                       tal:attributes="src string:
-                                       ${news/getURL}/@@images/image/large"
-                       class="card-img-top img-thumbnail">
-
-                  <div class="card-body">
-                    <h5 class="card-title" tal:content="news/Title">News</h5>
-                    <p class="card-text" tal:content="news/Description"></p>
-                    <a tal:attributes="href news/getURL" href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+          <div class="row row-cols-2 front-page-banner">
+            <div class="col front-page-banner-left">
+              <div class="container front-page-text">
+                <h1 class="container front-page-text">Promoting and defending internet freedoms</h1>
+                <p class="container front-page-text">
+                  Cambodia, Hong Kong (China), India, Indonesia, Malaysia, Myanmar, Philippines,
+                  Thailand, Timor-Leste and Vietnam
+                </p>
+              </div>
+            </div>
+            <div id="BannerCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="indonesia.svg" class="d-block w-100" alt="...">
                 </div>
+                <div class="carousel-item">
+                  <img src="malaysia.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="timor-leste.svg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="container front-page-objective">
+          <h2 class="front-page-title">
+            Our objectives
+          </h2>
+          <p class="front-page-objective-text-1">
+            Internet Monitoring and Action Project (iMAP) will promote and defend internet
+            freedoms in the respective countries by pursuing the following interconnected
+            objectives:
+          </p>
+
+          <div class="row row-cols-3 front-page-objective">
+            <div class="card mb-3 objective-1">
+              <p class="card-text objective">
+                Establish in-country networks that will monitor network interference and
+                restrictions to the freedom of expression online
+              </p>
 
             </div>
-            <div class="col">
-
-                <div class="card">
-                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
-
-                  <div class="card-body">
-                    <h5 class="card-title">Activity</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                    <p>2022-22-22</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-
+            <div class="card mb-3 objective-2">
+              <p class="card-text objective">
+                Promote legal advocacy to expand internet freedoms </p>
 
             </div>
-            <div class="col">
-
-                <div class="card">
-                  <img src="https://sinarproject.org/transparency/asking_questions_about_1mdb_is_not_a_crime.jpg/@@images/b9bccdb1-4a52-4d1f-97a9-f7e09d71fc9f.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Resource</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <p>Published: </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
+            <div class="card mb-3 objective-3">
+              <p class="card-text objective">
+                Enable civil society action for a freer internet </p>
 
             </div>
-        </div> 
-    </div>
+          </div>
+        </div>
 
-     <div tal:replace="structure provider:plone.belowcontentbody" />
+        <div class="container front-page-article">
+          <h2 class="front-page-title">
+            Latest articles
+          </h2>
+          <div class="row row-cols-3 front-page">
+            <div class="col">
+              <div class="card front-page-article">
+                <img src="indonesia.svg" class="card-img-top front-page-article" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title front-page-article">Card title</h3>
+                  <p class="card-text front-page-article">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-text front-page-article">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card front-page-article">
+                <img src="indonesia.svg" class="card-img-top front-page-article" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title front-page-article">Card title</h3>
+                  <p class="card-text front-page-article">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-text front-page-article">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card front-page-article">
+                <img
+                  src="https://images.unsplash.com/photo-1475869719317-4d1b122d511b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top front-page-article" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title front-page-article">Et tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime</h3>
+                  <p class="card-text front-page-article">Et tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime. Et tempore, cum
+                    soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime</p>
+                  <a href="#" class="card-text front-page-article">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-center resource-text">
+            <a href="#">View all articles here</a>
+          </p>
+        </div>
 
-    </tal:main-macro>
-</metal:main>
-</body>
+        <div class="container front-page-events">
+          <h2 class="front-page-title">
+            Upcoming events
+          </h2>
+          <div class="row row-cols-2 front-page-events">
+            <div class="col front-page-events-1">
+              <div class="card front-page-events">
+                <img
+                  src="https://images.unsplash.com/photo-1475869719317-4d1b122d511b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top front-page-article" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title front-page-article">Card title</h3>
+                  <p class="card-text front-page-article">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                  <svg class="event-logo" xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M7.42796 13.514C6.86384 13.514 6.3899 13.3212 6.00615 12.9358C5.6224 12.5503 5.43052 12.0755 5.43052 11.5114C5.43052 10.9473 5.62325 10.4733 6.00869 10.0896C6.39414 9.70583 6.86893 9.51396 7.43307 9.51396C7.99719 9.51396 8.47113 9.70668 8.85488 10.0921C9.23863 10.4776 9.4305 10.9524 9.4305 11.5165C9.4305 12.0806 9.23778 12.5546 8.85234 12.9383C8.46689 13.3221 7.9921 13.514 7.42796 13.514ZM3.9444 18.1945C3.5885 18.1945 3.27961 18.0636 3.01775 17.8017C2.75589 17.5398 2.62496 17.231 2.62496 16.8751V4.48617C2.62496 4.13026 2.75589 3.82138 3.01775 3.55952C3.27961 3.29766 3.5885 3.16673 3.9444 3.16673H5.1944V2.46185C5.1944 2.27413 5.2613 2.1132 5.39511 1.97906C5.5289 1.84491 5.69116 1.77783 5.8819 1.77783C6.07658 1.77783 6.24215 1.84491 6.37861 1.97906C6.51507 2.1132 6.5833 2.27413 6.5833 2.46185V3.16673H13.4166V2.46185C13.4166 2.27413 13.4835 2.1132 13.6173 1.97906C13.7511 1.84491 13.9134 1.77783 14.1041 1.77783C14.2988 1.77783 14.4644 1.84491 14.6008 1.97906C14.7373 2.1132 14.8055 2.27413 14.8055 2.46185V3.16673H16.0555C16.4114 3.16673 16.7203 3.29766 16.9822 3.55952C17.244 3.82138 17.375 4.13026 17.375 4.48617V16.8751C17.375 17.231 17.244 17.5398 16.9822 17.8017C16.7203 18.0636 16.4114 18.1945 16.0555 18.1945H3.9444ZM3.9444 16.8751H16.0555V8.22227H3.9444V16.8751ZM3.9444 6.90283H16.0555V4.48617H3.9444V6.90283Z"
+                      fill="#166FFF" />
+                  </svg>
+                  <span class="card-text event">FRI, 13 OCT 2023</span>
+                  <span class="card-text event">•</span>
+                  <span class="card-text event">4.00PM - 6.00PM</span>
+                  <p>
+                    <svg class="event-logo" xmlns="http://www.w3.org/2000/svg" width="20"
+                      height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M3.28819 17.375C3.10301 17.375 2.94618 17.3105 2.81771 17.1816C2.68924 17.0527 2.625 16.8964 2.625 16.7129C2.625 16.5293 2.68924 16.3738 2.81771 16.2465C2.94618 16.1192 3.10301 16.0556 3.28819 16.0556H4.27777V3.94444C4.27777 3.58853 4.4087 3.27965 4.67056 3.01779C4.93242 2.75593 5.24131 2.625 5.59721 2.625H14.4028C14.7587 2.625 15.0676 2.75593 15.3294 3.01779C15.5913 3.27965 15.7222 3.58853 15.7222 3.94444V16.0556H16.7188C16.8986 16.0556 17.053 16.1202 17.1818 16.2495C17.3106 16.3788 17.375 16.5337 17.375 16.7143C17.375 16.9001 17.3106 17.0567 17.1818 17.184C17.053 17.3113 16.8986 17.375 16.7188 17.375H3.28819ZM5.59721 16.0556H14.4028V3.94444H5.59721V16.0556ZM8.23502 10.6944C8.44592 10.6944 8.62151 10.6247 8.76179 10.4851C8.90207 10.3456 8.97221 10.1703 8.97221 9.95944C8.97221 9.74852 8.90244 9.57292 8.7629 9.43265C8.62335 9.29237 8.44812 9.22223 8.23721 9.22223C8.02629 9.22223 7.85069 9.292 7.71042 9.43154C7.57014 9.57108 7.5 9.74631 7.5 9.95723C7.5 10.1681 7.56977 10.3437 7.70931 10.484C7.84887 10.6243 8.0241 10.6944 8.23502 10.6944Z"
+                        fill="#2A2B2E" />
+                    </svg>
+                    <span class="card-text news-events">Streamyard</span>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col front-page-events-2">
+              <div class="card front-page-article">
+                <img src="indonesia.svg" class="card-img-top front-page-article" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title front-page-article">Card title</h3>
+                  <p class="card-text front-page-article">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                  <svg class="event-logo" xmlns="http://www.w3.org/2000/svg" width="20"
+                    height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M7.42796 13.514C6.86384 13.514 6.3899 13.3212 6.00615 12.9358C5.6224 12.5503 5.43052 12.0755 5.43052 11.5114C5.43052 10.9473 5.62325 10.4733 6.00869 10.0896C6.39414 9.70583 6.86893 9.51396 7.43307 9.51396C7.99719 9.51396 8.47113 9.70668 8.85488 10.0921C9.23863 10.4776 9.4305 10.9524 9.4305 11.5165C9.4305 12.0806 9.23778 12.5546 8.85234 12.9383C8.46689 13.3221 7.9921 13.514 7.42796 13.514ZM3.9444 18.1945C3.5885 18.1945 3.27961 18.0636 3.01775 17.8017C2.75589 17.5398 2.62496 17.231 2.62496 16.8751V4.48617C2.62496 4.13026 2.75589 3.82138 3.01775 3.55952C3.27961 3.29766 3.5885 3.16673 3.9444 3.16673H5.1944V2.46185C5.1944 2.27413 5.2613 2.1132 5.39511 1.97906C5.5289 1.84491 5.69116 1.77783 5.8819 1.77783C6.07658 1.77783 6.24215 1.84491 6.37861 1.97906C6.51507 2.1132 6.5833 2.27413 6.5833 2.46185V3.16673H13.4166V2.46185C13.4166 2.27413 13.4835 2.1132 13.6173 1.97906C13.7511 1.84491 13.9134 1.77783 14.1041 1.77783C14.2988 1.77783 14.4644 1.84491 14.6008 1.97906C14.7373 2.1132 14.8055 2.27413 14.8055 2.46185V3.16673H16.0555C16.4114 3.16673 16.7203 3.29766 16.9822 3.55952C17.244 3.82138 17.375 4.13026 17.375 4.48617V16.8751C17.375 17.231 17.244 17.5398 16.9822 17.8017C16.7203 18.0636 16.4114 18.1945 16.0555 18.1945H3.9444ZM3.9444 16.8751H16.0555V8.22227H3.9444V16.8751ZM3.9444 6.90283H16.0555V4.48617H3.9444V6.90283Z"
+                      fill="#166FFF" />
+                  </svg>
+                  <span class="card-text event">FRI, 13 OCT 2023</span>
+                  <span class="card-text event">•</span>
+                  <span class="card-text event">4.00PM - 6.00PM</span>
+                  <p>
+                    <svg class="event-logo" xmlns="http://www.w3.org/2000/svg" width="20"
+                      height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M3.28819 17.375C3.10301 17.375 2.94618 17.3105 2.81771 17.1816C2.68924 17.0527 2.625 16.8964 2.625 16.7129C2.625 16.5293 2.68924 16.3738 2.81771 16.2465C2.94618 16.1192 3.10301 16.0556 3.28819 16.0556H4.27777V3.94444C4.27777 3.58853 4.4087 3.27965 4.67056 3.01779C4.93242 2.75593 5.24131 2.625 5.59721 2.625H14.4028C14.7587 2.625 15.0676 2.75593 15.3294 3.01779C15.5913 3.27965 15.7222 3.58853 15.7222 3.94444V16.0556H16.7188C16.8986 16.0556 17.053 16.1202 17.1818 16.2495C17.3106 16.3788 17.375 16.5337 17.375 16.7143C17.375 16.9001 17.3106 17.0567 17.1818 17.184C17.053 17.3113 16.8986 17.375 16.7188 17.375H3.28819ZM5.59721 16.0556H14.4028V3.94444H5.59721V16.0556ZM8.23502 10.6944C8.44592 10.6944 8.62151 10.6247 8.76179 10.4851C8.90207 10.3456 8.97221 10.1703 8.97221 9.95944C8.97221 9.74852 8.90244 9.57292 8.7629 9.43265C8.62335 9.29237 8.44812 9.22223 8.23721 9.22223C8.02629 9.22223 7.85069 9.292 7.71042 9.43154C7.57014 9.57108 7.5 9.74631 7.5 9.95723C7.5 10.1681 7.56977 10.3437 7.70931 10.484C7.84887 10.6243 8.0241 10.6944 8.23502 10.6944Z"
+                        fill="#2A2B2E" />
+                    </svg>
+                    <span class="card-text news-events">Streamyard</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container front-page-events-time">
+              <p>
+                <svg class="front-page-events-time" xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" viewBox="0 0 20 20" fill="none">
+                  <path
+                    d="M10.0002 18.2082C9.53957 18.2082 9.14895 18.0479 8.82835 17.7273C8.50775 17.4067 8.34745 17.0161 8.34745 16.5555H11.653C11.653 17.0161 11.4927 17.4067 11.1721 17.7273C10.8515 18.0479 10.4609 18.2082 10.0002 18.2082ZM7.35785 15.3888C7.17267 15.3888 7.01584 15.3243 6.88737 15.1954C6.7589 15.0664 6.69466 14.9102 6.69466 14.7266C6.69466 14.5431 6.7589 14.3876 6.88737 14.2603C7.01584 14.133 7.17267 14.0693 7.35785 14.0693H12.6495C12.8294 14.0693 12.9837 14.134 13.1126 14.2633C13.2414 14.3926 13.3058 14.5475 13.3058 14.728C13.3058 14.9139 13.2414 15.0705 13.1126 15.1978C12.9837 15.3251 12.8294 15.3888 12.6495 15.3888H7.35785ZM6.81966 12.9166C5.90763 12.3379 5.18657 11.6006 4.65647 10.7048C4.12638 9.80892 3.86133 8.81095 3.86133 7.71086C3.86133 6.03265 4.46472 4.58951 5.6715 3.38144C6.87826 2.17337 8.31981 1.56934 9.99614 1.56934C11.6725 1.56934 13.1154 2.17337 14.3249 3.38144C15.5344 4.58951 16.1391 6.03265 16.1391 7.71086C16.1391 8.81095 15.8764 9.80892 15.3509 10.7048C14.8255 11.6006 14.1021 12.3379 13.1808 12.9166H6.81966ZM7.2742 11.5971H12.7334C13.3858 11.1573 13.8966 10.5957 14.2658 9.91244C14.6351 9.22915 14.8197 8.49497 14.8197 7.7099C14.8197 6.3824 14.3493 5.247 13.4085 4.30371C12.4678 3.36042 11.3321 2.88877 10.0015 2.88877C8.67084 2.88877 7.53472 3.35966 6.59314 4.30142C5.65156 5.24318 5.18077 6.3801 5.18077 7.71217C5.18077 8.49821 5.36653 9.23226 5.73806 9.91432C6.10959 10.5964 6.62163 11.1573 7.2742 11.5971Z"
+                    fill="#82878D" />
+                </svg>
+                <span class="text-center front-page-events-time">All event times are shown in
+                  Asia/Kuala Lumpur UTC +08:00</span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container front-page-bottom">
+        <div class="container front-page-resources">
+          <h2 class="front-page-title">
+            Latest resources
+          </h2>
+          <div class="card mb-3 country-resources">
+            <div class="row g-0 country-resources">
+              <div class="col-md-3 country-resources-image">
+                <img class="country-resources-image"
+                  src="https://imap.sinarproject.org/dsc09630_1.jpg"
+                  class="img-fluid rounded-start" alt="..."></img>
+              </div>
+              <div class="col-md-8 country-resources-body">
+                <div class="card-body">
+                  <img class="country-flag-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                    alt="..."></img>
+                  <img class="country-flag-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                    alt="..."></img>
+                  <h5 class="card-title country-resource-card">iMAP State of Censorship Report
+                    2022 — Full Report</h5>
+
+                  <p class="card-text country-resource-card">State authorities in India order
+                    domestic internet service providers (ISPs) to block access to websites and
+                    services. We developed a mobile application, CensorWatch, that runs network
+                    tests to study inco...</p>
+                  <span a href="#" class="badge country-resource-card">Research Reports</span>
+                  <span a href="#" class="badge country-resource-card">Working Paper</span>
+
+                  <div class="row row-cols-4 partner-icon">
+                    <div class="card partner-icon">
+                      <img class="partner-icon"
+                        src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png"
+                        class="card-img-top" alt="...">
+                      </img>
+                    </div>
+                    <div class="card partner-icon">
+                      <img class="partner-icon"
+                        src="https://imap.sinarproject.org/partners/centre-for-internet-and-society/@@images/599390b6-675f-4fce-88c0-f7442c7c9d5a.png"
+                        class="card-img-top" alt="...">
+                      </img>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-center resource-text">
+            <a href="#">View all resources here</a>
+          </p>
+        </div>
+
+
+        <div class="container front-page-censorship-events">
+          <div class="container front-page-censorship-events-inner">
+            <div class="row front-page-censorship-events-title">
+              <h2 class="row front-page-censorship-events-title">------------CENSORSHIP
+                EVENTS------------</h2>
+            </div>
+            <div class="row row-cols-2 censorship-events">
+              <div class="col censorship-events">
+                <div class="card censorship-events">
+                  <div class="card-body censorship-events">
+
+                    <p>
+                      <img class="country-flag-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                        alt="..."></img>
+                    </p>
+
+                    <h5 class="card-title censorship-events">Addressing Internet Censorship and
+                      Content Filtering: An Advocacaaa</h5>
+                    <p>
+                      <svg class="censorship-date-logo" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M7.428 13.5137C6.86388 13.5137 6.38994 13.321 6.00619 12.9355C5.62244 12.5501 5.43056 12.0753 5.43056 11.5112C5.43056 10.947 5.62329 10.4731 6.00873 10.0893C6.39417 9.70559 6.86897 9.51371 7.4331 9.51371C7.99723 9.51371 8.47117 9.70644 8.85492 10.0919C9.23867 10.4773 9.43054 10.9521 9.43054 11.5163C9.43054 12.0804 9.23782 12.5543 8.85238 12.9381C8.46693 13.3218 7.99214 13.5137 7.428 13.5137ZM3.94444 18.1943C3.58853 18.1943 3.27965 18.0633 3.01779 17.8015C2.75593 17.5396 2.625 17.2307 2.625 16.8748V4.48592C2.625 4.13002 2.75593 3.82114 3.01779 3.55928C3.27965 3.29741 3.58853 3.16648 3.94444 3.16648H5.19444V2.46161C5.19444 2.27389 5.26134 2.11296 5.39515 1.97882C5.52894 1.84466 5.6912 1.77759 5.88194 1.77759C6.07662 1.77759 6.24219 1.84466 6.37865 1.97882C6.5151 2.11296 6.58333 2.27389 6.58333 2.46161V3.16648H13.4167V2.46161C13.4167 2.27389 13.4836 2.11296 13.6174 1.97882C13.7512 1.84466 13.9134 1.77759 14.1042 1.77759C14.2988 1.77759 14.4644 1.84466 14.6009 1.97882C14.7373 2.11296 14.8056 2.27389 14.8056 2.46161V3.16648H16.0556C16.4115 3.16648 16.7203 3.29741 16.9822 3.55928C17.2441 3.82114 17.375 4.13002 17.375 4.48592V16.8748C17.375 17.2307 17.2441 17.5396 16.9822 17.8015C16.7203 18.0633 16.4115 18.1943 16.0556 18.1943H3.94444ZM3.94444 16.8748H16.0556V8.22203H3.94444V16.8748ZM3.94444 6.90259H16.0556V4.48592H3.94444V6.90259Z"
+                          fill="#82878D" />
+                      </svg>
+                      <span class="card-text censorship-events">FRI, 13 OCT 2023</span>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col censorship-events">
+                <div class="card censorship-events">
+                  <div class="card-body censorship-events">
+
+                    <p>
+                      <img class="country-flag-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                        alt="..."></img>
+                    </p>
+
+                    <h5 class="card-title censorship-events">Indian court orders blocking
+                      of Github</h5>
+                    <p>
+                      <svg class="censorship-date-logo" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M7.428 13.5137C6.86388 13.5137 6.38994 13.321 6.00619 12.9355C5.62244 12.5501 5.43056 12.0753 5.43056 11.5112C5.43056 10.947 5.62329 10.4731 6.00873 10.0893C6.39417 9.70559 6.86897 9.51371 7.4331 9.51371C7.99723 9.51371 8.47117 9.70644 8.85492 10.0919C9.23867 10.4773 9.43054 10.9521 9.43054 11.5163C9.43054 12.0804 9.23782 12.5543 8.85238 12.9381C8.46693 13.3218 7.99214 13.5137 7.428 13.5137ZM3.94444 18.1943C3.58853 18.1943 3.27965 18.0633 3.01779 17.8015C2.75593 17.5396 2.625 17.2307 2.625 16.8748V4.48592C2.625 4.13002 2.75593 3.82114 3.01779 3.55928C3.27965 3.29741 3.58853 3.16648 3.94444 3.16648H5.19444V2.46161C5.19444 2.27389 5.26134 2.11296 5.39515 1.97882C5.52894 1.84466 5.6912 1.77759 5.88194 1.77759C6.07662 1.77759 6.24219 1.84466 6.37865 1.97882C6.5151 2.11296 6.58333 2.27389 6.58333 2.46161V3.16648H13.4167V2.46161C13.4167 2.27389 13.4836 2.11296 13.6174 1.97882C13.7512 1.84466 13.9134 1.77759 14.1042 1.77759C14.2988 1.77759 14.4644 1.84466 14.6009 1.97882C14.7373 2.11296 14.8056 2.27389 14.8056 2.46161V3.16648H16.0556C16.4115 3.16648 16.7203 3.29741 16.9822 3.55928C17.2441 3.82114 17.375 4.13002 17.375 4.48592V16.8748C17.375 17.2307 17.2441 17.5396 16.9822 17.8015C16.7203 18.0633 16.4115 18.1943 16.0556 18.1943H3.94444ZM3.94444 16.8748H16.0556V8.22203H3.94444V16.8748ZM3.94444 6.90259H16.0556V4.48592H3.94444V6.90259Z"
+                          fill="#82878D" />
+                      </svg>
+                      <span class="card-text censorship-events">FRI, 13 OCT 2023</span>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col censorship-events">
+                <div class="card censorship-events">
+                  <div class="card-body censorship-events">
+
+                    <p>
+                      <img class="country-flag-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                        alt="..."></img>
+                    </p>
+
+                    <h5 class="card-title censorship-events">Indian court orders blocking
+                      of Github</h5>
+                    <p>
+                      <svg class="censorship-date-logo" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M7.428 13.5137C6.86388 13.5137 6.38994 13.321 6.00619 12.9355C5.62244 12.5501 5.43056 12.0753 5.43056 11.5112C5.43056 10.947 5.62329 10.4731 6.00873 10.0893C6.39417 9.70559 6.86897 9.51371 7.4331 9.51371C7.99723 9.51371 8.47117 9.70644 8.85492 10.0919C9.23867 10.4773 9.43054 10.9521 9.43054 11.5163C9.43054 12.0804 9.23782 12.5543 8.85238 12.9381C8.46693 13.3218 7.99214 13.5137 7.428 13.5137ZM3.94444 18.1943C3.58853 18.1943 3.27965 18.0633 3.01779 17.8015C2.75593 17.5396 2.625 17.2307 2.625 16.8748V4.48592C2.625 4.13002 2.75593 3.82114 3.01779 3.55928C3.27965 3.29741 3.58853 3.16648 3.94444 3.16648H5.19444V2.46161C5.19444 2.27389 5.26134 2.11296 5.39515 1.97882C5.52894 1.84466 5.6912 1.77759 5.88194 1.77759C6.07662 1.77759 6.24219 1.84466 6.37865 1.97882C6.5151 2.11296 6.58333 2.27389 6.58333 2.46161V3.16648H13.4167V2.46161C13.4167 2.27389 13.4836 2.11296 13.6174 1.97882C13.7512 1.84466 13.9134 1.77759 14.1042 1.77759C14.2988 1.77759 14.4644 1.84466 14.6009 1.97882C14.7373 2.11296 14.8056 2.27389 14.8056 2.46161V3.16648H16.0556C16.4115 3.16648 16.7203 3.29741 16.9822 3.55928C17.2441 3.82114 17.375 4.13002 17.375 4.48592V16.8748C17.375 17.2307 17.2441 17.5396 16.9822 17.8015C16.7203 18.0633 16.4115 18.1943 16.0556 18.1943H3.94444ZM3.94444 16.8748H16.0556V8.22203H3.94444V16.8748ZM3.94444 6.90259H16.0556V4.48592H3.94444V6.90259Z"
+                          fill="#82878D" />
+                      </svg>
+                      <span class="card-text censorship-events">FRI, 13 OCT 2023</span>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col censorship-events">
+                <div class="card censorship-events">
+                  <div class="card-body censorship-events">
+
+                    <p>
+                      <img class="country-flag-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/1280px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png"
+                        alt="..."></img>
+                    </p>
+
+                    <h5 class="card-title censorship-events">Indian court orders blocking
+                      of Github</h5>
+                    <p>
+                      <svg class="censorship-date-logo" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M7.428 13.5137C6.86388 13.5137 6.38994 13.321 6.00619 12.9355C5.62244 12.5501 5.43056 12.0753 5.43056 11.5112C5.43056 10.947 5.62329 10.4731 6.00873 10.0893C6.39417 9.70559 6.86897 9.51371 7.4331 9.51371C7.99723 9.51371 8.47117 9.70644 8.85492 10.0919C9.23867 10.4773 9.43054 10.9521 9.43054 11.5163C9.43054 12.0804 9.23782 12.5543 8.85238 12.9381C8.46693 13.3218 7.99214 13.5137 7.428 13.5137ZM3.94444 18.1943C3.58853 18.1943 3.27965 18.0633 3.01779 17.8015C2.75593 17.5396 2.625 17.2307 2.625 16.8748V4.48592C2.625 4.13002 2.75593 3.82114 3.01779 3.55928C3.27965 3.29741 3.58853 3.16648 3.94444 3.16648H5.19444V2.46161C5.19444 2.27389 5.26134 2.11296 5.39515 1.97882C5.52894 1.84466 5.6912 1.77759 5.88194 1.77759C6.07662 1.77759 6.24219 1.84466 6.37865 1.97882C6.5151 2.11296 6.58333 2.27389 6.58333 2.46161V3.16648H13.4167V2.46161C13.4167 2.27389 13.4836 2.11296 13.6174 1.97882C13.7512 1.84466 13.9134 1.77759 14.1042 1.77759C14.2988 1.77759 14.4644 1.84466 14.6009 1.97882C14.7373 2.11296 14.8056 2.27389 14.8056 2.46161V3.16648H16.0556C16.4115 3.16648 16.7203 3.29741 16.9822 3.55928C17.2441 3.82114 17.375 4.13002 17.375 4.48592V16.8748C17.375 17.2307 17.2441 17.5396 16.9822 17.8015C16.7203 18.0633 16.4115 18.1943 16.0556 18.1943H3.94444ZM3.94444 16.8748H16.0556V8.22203H3.94444V16.8748ZM3.94444 6.90259H16.0556V4.48592H3.94444V6.90259Z"
+                          fill="#82878D" />
+                      </svg>
+                      <span class="card-text censorship-events">FRI, 13 OCT 2023</span>
+                    </p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          
+
+
+      </metal:block>
+    </metal:content-core>
+
+
+    <!-- <metal:main fill-slot="main">
+      <tal:main-macro metal:define-macro="main"
+          tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
+        </tal:main-macro>
+      </metal:main> -->
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+  </body>
 </html>
