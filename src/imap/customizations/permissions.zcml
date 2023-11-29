@@ -12,13 +12,6 @@
     />
 
 
-    <permission
-        id="imap.customizations.AddPerson"
-        title="imap.customizations: Add Person"
-    />
-
-
-
   </configure>
 
 </configure>

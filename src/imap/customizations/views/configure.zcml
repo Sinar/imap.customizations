@@ -34,7 +34,7 @@
     />
 
   <browser:page
-    name="front-page"
+    name="front-page-view"
     for="*"
     class=".front_page.FrontPage"
     template="front_page.pt"
