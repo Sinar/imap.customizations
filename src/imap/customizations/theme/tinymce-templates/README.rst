@@ -7,9 +7,24 @@ configure the templates within the TinyMCE controlpanel of your Plone site.
 Activate TinyMCE Templates Plugin
 ---------------------------------
 
-.. code-block::
+Go to the Plugins and Toolbar tab.
+Under "Editor plugins" locate the "template" plugin and enable it.
 
-    template|++plone++static/components/tinymce-builded/js/tinymce/plugins/template
+In ``registry.xml`` in a ``GenericSetup`` profile you would do it like this:
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <registry>
+      <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+              prefix="plone"
+      >
+        <value key="plugins"
+              purge="false"
+        >
+          <element>template</element>
+        </value>
+    </registry>
 
 
 Configure TinyMCE Templates
@@ -20,10 +35,12 @@ Configure TinyMCE Templates
     [
         {
           "title": "List",
-          "url": "++theme++imap-theme/tinymce-templates/list.html"
+          "description": "List of group items",
+          "url": "++theme++imap-clean-blog-theme/tinymce-templates/list.html"
         },
         {
           "title": "Card Group",
-          "url": "++theme++imap-theme/tinymce-templates/card-group.html"
-        },
+          "description": "Group of cards",
+          "url": "++theme++imap-clean-blog-theme/tinymce-templates/card-group.html"
+        }
     ]

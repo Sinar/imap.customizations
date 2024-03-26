@@ -45,6 +45,13 @@
   <plone:static
       directory="theme"
       type="theme"
+      name="imap-clean-blog-theme"
+      />
+
+
+  <plone:static
+      directory="theme"
+      type="theme"
       name="imap-theme"
       />
 
